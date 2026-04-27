@@ -1,0 +1,140 @@
+{
+    "teammembersprofilesData": [
+        {
+            "id": 1,
+            "name": "M. I. M. Farhad",
+            "role": "Managing Director",
+            "image": "/images/1.1.png",
+            "linkedin": "https://www.linkedin.com/in/m-i-m-farhad-463b5512/",
+            "email": "mim.farhad@gmail.com"
+        },
+        {
+            "id": 2,
+            "name": "Ayesha Khatun",
+            "role": "Program Director",
+            "image": "/images/Program-Head-and-Director.jpg",
+            "linkedin": null,
+            "email": "ayesha201981@gmail.com"
+        },
+        {
+            "id": 3,
+            "name": "Md. Nurullah",
+            "role": "Team Lead (Geospatial Data Analysis)",
+            "image": "/images/oin.jpg",
+            "linkedin": "https://www.linkedin.com/in/nurullahopu/",
+            "email": "nurullah@gmgisolutions.com"
+        },
+        {
+            "id": 4,
+            "name": "Afrida Asad",
+            "role": "Team Lead (Research & Development)",
+            "image": "/images/3.1.png",
+            "linkedin": "https://www.linkedin.com/in/afrida-asad/",
+            "email": "afrida.abonty@gmail.com"
+        },
+        {
+            "id": 5,
+            "name": "Mohammad Aftab Uddin",
+            "role": "Solutions Architect (Volunteer Support)",
+            "image": "/images/Untitled.jpg",
+            "linkedin": "https://www.linkedin.com/in/mauddin/?originalSubdomain=bd",
+            "email": null
+        },
+        {
+            "id": 6,
+            "name": "Nazmul Hasan Akanda",
+            "role": "Software Engineer (Volunteer Support)",
+            "image": "/images/screenshot-www.linkedin.com-2022.10.22-12_14_17.png",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 7,
+            "name": "Md. Ismail Hossain",
+            "role": "GIS Developer",
+            "image": "/images/6.png",
+            "linkedin": "https://www.linkedin.com/in/md-ismail-hossain-04475b169/",
+            "email": null
+        },
+        {
+            "id": 8,
+            "name": "Ahamed Sakib Antor",
+            "role": "Project Coordinator",
+            "image": "/images/658.png",
+            "linkedin": "https://www.linkedin.com/in/ahamed-sakib-antor-8ab22b133/",
+            "email": null
+        },
+        {
+            "id": 9,
+            "name": "Md. Mustakim Hossain Khan",
+            "role": "GIS Supervisor",
+            "image": "/images/mustakim_pp-scaled-1.jpg",
+            "linkedin": "https://www.linkedin.com/in/mustakim-hossain-antu-7857a0148/",
+            "email": null
+        },
+        {
+            "id": 10,
+            "name": "Farah Yeasmin",
+            "role": "GIS Analyst",
+            "image": "/images/4.1.png",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 11,
+            "name": "Mst. Asfat Ara Joly",
+            "role": "GIS Analyst",
+            "image": "/images/5.1.png",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 12,
+            "name": "Israt Jahan Ria",
+            "role": "Research Assistant",
+            "image": "/images/Israt-pp2.jpg",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 13,
+            "name": "MD. NAFIZ IMTIAZ",
+            "role": "GIS Analyst",
+            "image": "/images/IMG-20221128-WA0000.png",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 14,
+            "name": "Md. Rashed Alam",
+            "role": "Junior GIS Analyst",
+            "image": "/images/im.jpg",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 15,
+            "name": "Md Takveer Hossain",
+            "role": "Marketing Communication Officer",
+            "image": "/images/FB_IMG_1653239698376.jpg",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 16,
+            "name": "Md. Masud Rana",
+            "role": "Accounts and Admin",
+            "image": "/images/336699.png",
+            "linkedin": "https://linkedin.com",
+            "email": null
+        },
+        {
+            "id": 17,
+            "name": "Mahmudul Hasan",
+            "role": "Project Manager (IT)",
+            "image": "/images/Hasan.jpg",
+            "linkedin": "https://www.linkedin.com/in/loyalhasan/",
+            "email": "mailto:engr.hasanmte@gmail.com"
+        }
+    ]
+}

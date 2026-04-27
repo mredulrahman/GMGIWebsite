@@ -1,0 +1,35 @@
+{
+  "projectsData": [
+    {
+      "id": "grant",
+      "slug": "an-integrated-web-portal-to-access-data-sources-for-public-health-planning-in-bangladesh",
+      "title": "An integrated web portal to access data sources for public health planning in Bangladesh",
+      "potentialFunder": "Global Development Network (GDN)",
+      "potentialFundingCategory": "Japanese Award for Outstanding Research on Development (ORD) 2022",
+      "currentStatus": "Undergoing Second Review",
+      "proposalSubmissionDate": "January 6, 2023",
+      "secondReviewSubmissionDate": "February 21, 2023",
+      "description": "The project is titled “Development of an Integrated Web Portal for Accessing Data Sources for Public Health Planning in Bangladesh.” The Global Development Network (GDN) is being considered as a potential funder for the project, under the Japanese Award for Outstanding Research on Development (ORD) 2022 funding category. As of now, the project is under its second review. The proposal was initially submitted on January 6, 2023, and the submission date for the second review was on February 21, 2023."
+    },
+    {
+      "id": "client",
+      "slug": "digital-map",
+      "title": "Digital Map",
+      "client": "Banglalink Digital Communication Limited",
+      "proposalSubmissionDate": "20 February, 2023",
+      "description": "The project involves the development of a digital map for Banglalink Digital Communication Limited. The proposal for the project was submitted on February 20, 2023. "
+    },
+    {
+      "id": "awarded",
+      "slug": "a-pilot-project-on-preparation-of-comprehensive-development-plan-for-nine-upazilas",
+      "title": "A Pilot Project on Preparation of Comprehensive Development Plan for Nine Upazilas",
+      "awardedPackageName": "Socie-Economic Survey",
+      "awardedPackageNo": "4 (four)",
+      "client": "Urban Development Directorate (UDD)",
+      "score": "82.33 out of 100",
+      "awardedDate": "21 November 2022",
+      "letterOfIntentSignedOn": "12th March 2023",
+      "description": "This is an ongoing project titled “A Pilot Project on the Preparation of Comprehensive Development Plan for Nine Upazilas,” which has been awarded Package No. 4 for the Socio-Economic Survey. The project is being carried out for the Urban Development Directorate (UDD), and has received a score of 82.33 out of 100. The Letter of Intent was signed on March 12, 2023."
+    }
+  ]
+}

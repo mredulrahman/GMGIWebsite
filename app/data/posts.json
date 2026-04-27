@@ -1,0 +1,88 @@
+{
+    "postsData": [
+        {
+            "id": 1,
+            "slug": "2022/11/19/gmgi-just-hosted-one-day-session-titled-foundation-training-on-gis-2nd-base-on-november-19th2022",
+            "date": "November 19, 2022",
+            "author": "admin",
+            "category": "Uncategorized",
+            "title": "GMGI Just Hosted a One Day Session Titled Foundation Training on GIS 2nd Base on November 19th, 2022",
+            "description": null,
+            "images": [
+            "/images/post1-main.jpg",
+            "/images/post1-thumb1.jpg",
+            "/images/post1-thumb2.jpg",
+            "/images/post1-thumb3.jpg"
+            ],
+            "thumbnails": [
+            "/images/post1-thumb1.jpg",
+            "/images/post1-thumb2.jpg",
+            "/images/post1-thumb3.jpg"
+            ]
+        },
+        {
+            "id": 2,
+            "slug": "2022/11/15/gmgi-just-hosteda-one-day-session-titled-mauza-georeferencing-and-digitizing-using-arcgis-on-november-15th2022",
+            "date": "November 15, 2022",
+            "author": "admin",
+            "category": "Uncategorized",
+            "title": "GMGI Just Hosted a One Day Session Titled Mauza Georeferencing and Digitizing Using ArcGIS on November 15th, 2022",
+            "description": "Students with an interest in GIS attended the session, which was designed to assist them in gaining in-depth knowledge and techniques in digitization and georeferencing.\nA huge thank you goes out to all of the eager participants who came and stayed patient throughout the event.",
+            "images": [
+            "/images/post2-main.jpg",
+            "/images/post2-thumb1.jpg",
+            "/images/post2-thumb2.jpg",
+            "/images/post2-thumb3.jpg"
+            ],
+            "thumbnails": [
+            "/images/post2-thumb1.jpg",
+            "/images/post2-thumb2.jpg",
+            "/images/post2-thumb3.jpg"
+            ]
+        },
+        {
+            "id": 3,
+            "slug": "2022/11/05/3-days-training-on-qgis-applied-to-wash-in-humanitarian-settings-at-coxs-bazar-bangladesh-for-german-red-cross-bangladesh-delegation-international-federation-of-red-cross-and-red-crescent-societie",
+            "date": "November 5, 2022",
+            "author": "admin",
+            "category": "Uncategorized",
+            "title": "3 Days Training on QGIS Applied to WASH in Humanitarian Settings at Cox's Bazar, Bangladesh",
+            "description": "3 Days Training on QGIS Applied to WASH in Humanitarian Settings at Cox's Bazar, Bangladesh for German Red Cross Bangladesh Delegation, International Federation of Red Cross and Red Crescent Societies, Bangladesh Red Crescent Society(BDRCS)",
+            "images": [
+            "/images/post3-main.jpg",
+            "/images/post3-cert.jpg",
+            "/images/post3-thumb1.jpg",
+            "/images/post3-thumb2.jpg",
+            "/images/post3-thumb3.jpg",
+            "/images/post3-group.jpg"
+            ],
+            "thumbnails": [
+            "/images/post3-thumb1.jpg",
+            "/images/post3-thumb2.jpg",
+            "/images/post3-thumb3.jpg"
+            ]
+        },
+        {
+            "id": 4,
+            "slug": "2022/10/23/afrida-asad-abonty-director-gmgi-solutions-ltd-has-been-awarded-the-prestigious-commonwealth-scholarship-this-academic-year",
+            "date": "October 23, 2022",
+            "author": "admin",
+            "category": "Uncategorized",
+            "title": "Afrida Asad Abonty, Director, GMGI Solutions Ltd Has Been Awarded the Prestigious Commonwealth Scholarship This Academic Year",
+            "description": "We are thrilled to share the news that Afrida Asad Abonty, director, GMGI Solutions Ltd, has been awarded the prestigious Commonwealth Scholarship this academic year! She will begin her Masters in Global Health Science and Epidemiology University, Nuffield Department of Population Sciences, University of Oxford in this October, 2022.\n\nHer higher education will motivate the employee family to develop initiatives that meet worldwide standards, and she will be a flag bearer for social enterprise-based entrepreneurship. Her unique perspective and mindset were a true asset as she earned this award. This is a collective success for the firm, since the director will bring with her extensive expertise from the most prestigious institution in the world, which she will use to establish new dimensions upon her arrival. She is a key contributor to the growth of the firm, making her one of the driving factors behind its success.\n\nThis is a moment of pride for the GMGI family, and we wish her an incredible journey ahead!",
+            "images": [
+            "/images/post4-banner1.jpg",
+            "/images/post4-banner2.jpg"
+            ],
+            "thumbnails": [],
+            "honoree": {
+            "name": "Afrida Asad Abonty",
+            "award": "Commonwealth Scholarship",
+            "university": "University of Oxford",
+            "department": "Nuffield Department of Population Sciences",
+            "program": "Masters in Global Health Science and Epidemiology",
+            "website": "www.gmgisolutions.com"
+            }
+        }
+    ]
+}
