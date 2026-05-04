@@ -1,57 +1,59 @@
 import Image from "next/image";
+import Link from "next/link";
+
 
 const industries = [
   {
-    id: 1,
+    id: "geospatial-data",
     title: "Geography",
     image: "/images/gg-255x182.jpg",
     alt: "Geography",
-    href: "#",
+    href: "#"
   },
   {
-    id: 2,
+    id: "public-health",
     title: "Public Health",
     image: "/images/health_effects-255x182.jpg",
     alt: "Public Health",
     href: "#",
   },
   {
-    id: 3,
+    id: "geology",
     title: "Geology",
     image: "/images/df-1-255x182.jpg",
     alt: "Geology",
     href: "#",
   },
   {
-    id: 4,
+    id: "climatology",
     title: "Climatology",
     image: "/images/shutterstock-240459751-255x182.webp",
     alt: "Climatology",
     href: "#",
   },
   {
-    id: 5,
+    id: "hydrology",
     title: "Hydrology",
     image: "/images/Colorful-Minimalist-Linear-Steps-Circular-Diagram-255x182.png",
     alt: "Hydrology",
     href: "#",
   },
   {
-    id: 6,
+    id: "urban-and-regional-planning",
     title: "Urban and Regional Planning",
     image: "/images/1520181828934-255x182.jpg",
     alt: "Urban and Regional Planning",
     href: "#",
   },
   {
-    id: 7,
+    id: "agriculture",
     title: "Agriculture",
     image: "/images/download-1-255x182.jpg",
     alt: "Agriculture",
     href: "#",
   },
   {
-    id: 8,
+    id: "socioeconomic",
     title: "Socio Economy",
     image: "/images/images-255x182.jpg",
     alt: "Socio Economy",
@@ -89,9 +91,11 @@ export default function WorkSection() {
         <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Industries We Work In</h1>
       <div className="max-w-6xl mx-auto p-3">
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-9">
           {industries.map((item) => (
-            <IndustryCard key={item.id} item={item} />
+            <Link key={item.id} href={`/history/${item.id}`}>
+              <IndustryCard item={item} />
+            </Link>
           ))}
         </div>
       </div>

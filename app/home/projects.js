@@ -1,7 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Image from "next/image"; // Import motion and AnimatePresence
+import Link from "next/link";
+import Image from "next/image";
 import { motion, AnimatePresence } from "framer-motion";
 
 const filters = ["ALL", "POTENTIAL", "ONGOING", "2022", "2021", "2020", "2019"];
@@ -9,6 +10,7 @@ const filters = ["ALL", "POTENTIAL", "ONGOING", "2022", "2021", "2020", "2019"];
 const projects = [
   {
     id: 1,
+    slug: "noise-measurement-survey",
     title: "Noise Measurement Survey",
     tag: "2019",
     image: "/images/noise-1.jpg",
@@ -16,6 +18,7 @@ const projects = [
   },
   {
     id: 2,
+    slug: "digital-survey-and-3d-modelling-for-jail-khal-in-barisal-city-corporation",
     title: "Digital Survey and 3D modelling for Jail Khal",
     tag: "2019",
     image: "/images/digital-survey.jpg",
@@ -23,6 +26,7 @@ const projects = [
   },
   {
     id: 3,
+    slug: "geospatial-dashboard-for-district-development-plan-coxs-bazar",
     title: "Geospatial Dashboard for District Development Plan (Cox's Bazar)",
     tag: "ONGOING",
     image: "/images/c-1.jpg",
@@ -30,6 +34,7 @@ const projects = [
   },
   {
     id: 4,
+    slug: "training-on-flood-risk-assessment-using-geospatial-and-statistical-techniques",
     title: "Training on Flood Risk Assessment Using Geospatial and Statistical Techniques",
     tag: "2022",
     image: "/images/training-1.png",
@@ -37,6 +42,7 @@ const projects = [
   },
   {
     id: 5,
+    slug: "rural-renewable-energy-project-rrep-sierra-leone-wp6-matching-grant",
     title: "Rural Renewable Energy Project (RREP), Sierra Leone",
     tag: "2020",
     image: "/images/rural.jpg",
@@ -44,6 +50,7 @@ const projects = [
   },
   {
     id: 6,
+    slug: "aerial-drone-survey-for-khatunganj-chattogram-under-nrp-project",
     title: "Aerial Drone Survey for Khatunganj, Chattogram",
     tag: "2020",
     image: "/images/areal-1.jpg",
@@ -51,6 +58,7 @@ const projects = [
   },
   {
     id: 7,
+    slug: "fatehabad-township-project",
     title: "Fatehabad Township Project",
     tag: "2020",
     image: null,
@@ -58,6 +66,7 @@ const projects = [
   },
   {
     id: 8,
+    slug: "dhaka-earthquake-emergency-preparedness-enhancing-resilience-deeper-risk-and-resource-mapping",
     title: "Dhaka Earthquake & Emergency Preparedness Enhancing Resilience (DEEPER)",
     tag: "2021",
     image: "/images/earthquiqe.jpg",
@@ -65,6 +74,7 @@ const projects = [
   },
   {
     id: 9,
+    slug: "gis-mapping-of-11-sectors-and-bhoddhobhumi-of-bangladesh-liberation-war",
     title: "GIS Mapping of 11 Sectors and Bhoddhobhumi of Bangladesh Liberation War",
     tag: "2021",
     image: "/images/11-2.jpg",
@@ -72,6 +82,7 @@ const projects = [
   },
   {
     id: 10,
+    slug: "georeferencing-of-mouza-maps-of-15-polders-at-coastal-area-of-bangladesh-using-satellite-imageries",
     title: "Georeferencing of Mouza Maps of 15 Polders at Coastal Area of Bangladesh",
     tag: "2022",
     image: "/images/15-1.jpg",
@@ -79,6 +90,7 @@ const projects = [
   },
   {
     id: 11,
+    slug: "a-pilot-project-on-preparation-of-comprehensive-development-plan-for-nine-upazilas",
     title: "A Pilot Project on Preparation of Comprehensive Development Plan for Nine Upazilas",
     tag: "ONGOING",
     image: null,
@@ -86,6 +98,7 @@ const projects = [
   },
   {
     id: 12,
+    slug: "digital-map",
     title: "Digital map",
     tag: "POTENTIAL",
     image: null,
@@ -93,6 +106,7 @@ const projects = [
   },
   {
     id: 13,
+    slug: "an-integrated-web-portal-to-access-data-sources-for-public-health-planning-in-bangladesh",
     title: "An integrated web portal to access data sources for public health planning in Bangladesh",
     tag: "POTENTIAL",
     image: null,
@@ -100,6 +114,7 @@ const projects = [
   },
   {
     id: 14,
+    slug: "gcp-collection-for-georeferencing-satellite-imageries-and-preparing-dtm-dsm-of-gk-project-area",
     title: "Satellite Imageries and Preparing DTM DSM of GK Project Area",
     tag: "2020",
     description: "GCP collection for Georeferencing Satellite Imageries and Preparing DTM DSM of GK Project Area",
@@ -110,18 +125,18 @@ const projects = [
 
 function PlaceholderImage() {
   return (
-      <Image src="/images/flexia-preview.jpg"
-             width={100}
-             height={100}
-             className="w-full h-full"
-            />
+    <Image src="/images/flexia-preview.jpg"
+      width={100}
+      height={100}
+      className="w-full h-full"
+    />
   );
 }
 
 function ProjectCard({ project }) {
   return (
     <div className="rounded-4xl overflow-hidden flex flex-col shadow-md hover:shadow-xl transition-shadow duration-300 cursor-pointer group bg-white border border-white">
-    
+
       <div className="relative w-full h-44 overflow-hidden">
         {project.image ? (
           <Image
@@ -184,9 +199,9 @@ export default function ProjectsSection() {
 
   return (
     <section className="">
-        <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Projects</h1>
+      <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Projects</h1>
       <div className="max-w-6xl mx-auto py-4">
-        <motion.div 
+        <motion.div
           className="flex flex-wrap justify-center gap-2 mb-10"
           initial="hidden"
           animate="visible"
@@ -204,12 +219,11 @@ export default function ProjectsSection() {
             <motion.button // Apply motion to each button
               key={f}
               onClick={() => setActiveFilter(f)}
-              className={`px-5 py-2 text-md font-normal tracking-wide border transition-colors duration-150 ${
-                activeFilter === f
-                  ? "bg-black text-white"
-                  : "bg-[#25ABB9] text-white"
-              }`}
-              variants={buttonVariants} 
+              className={`px-5 py-2 text-md font-normal tracking-wide border transition-colors duration-150 ${activeFilter === f
+                ? "bg-black text-white"
+                : "bg-[#25ABB9] text-white"
+                }`}
+              variants={buttonVariants}
             >
               {f}
             </motion.button>
@@ -230,7 +244,9 @@ export default function ProjectsSection() {
                 exit="exit"
                 variants={cardVariants}
               >
-                <ProjectCard project={project} />
+                <Link href={`/view/${project.slug}`}>
+                  <ProjectCard project={project} />
+                </Link>
               </motion.div>
             ))}
           </AnimatePresence>

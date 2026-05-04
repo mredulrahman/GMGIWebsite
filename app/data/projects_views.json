@@ -1,0 +1,213 @@
+{
+  "pagesData": [
+    {
+      "id": "1",
+      "slug": "noise-measurement-survey",
+      "text": "The aim of the project is to assess the noise level at different times of the day at different places. A digital sound level meter was used to measure the noise level.",
+      "images": [
+        {
+          "src": "/images/noise-1.jpg",
+          "alt": "Noise level heatmap map"
+        },
+        {
+          "src": "/images/noise.jpg",
+          "alt": "Noise level scatter point map"
+        }
+      ],
+      "stepSection": {
+        "heading": "Steps followed-",
+        "steps": [
+          "Forms are designed with different types of questions for data collection.",
+          "Project is shared with data collectors.",
+          "Data collection.",
+          "Visualizing collected data on a map"
+        ]
+      }
+    },
+    {
+      "id": "5",
+      "slug": "digital-survey-and-3d-modelling-for-jail-khal-in-barisal-city-corporation",
+      "text1": "This survey was undertaken to identify the illegal infrastructure within the Jail Khal area.  At the beginning of the survey, highly precise Ground Control Points (GCP) were collected for image Geo-rectification using the GNSS-RTK Method. After the control points of the study area were identified, the aerial imagery of the study area was collected.  UAV Survey was carried out to acquire stereo images in the Study Area and was executed by the GMGI Solutions Ltd and Centre for Geoservices and Research (CGR)",
+      "images": {
+        "src": "/images/digital-survey.jpg",
+        "alt": "Inundation extent (DFO) map of Bangladesh"
+      },
+      "text2": "360 Panorama Photos of the study area were captured along with 4k video as per requirement. After the image acquisition, they were processed to create an orthophoto to digitize the physical features (Buildings, houses, industries, roads, water bodies, etc.).  After the digitization of the features of the area, the shapefile was buffered accordingly to identify the infrastructure within that range.\n\n After this step, the questionnaires for the physical feature survey and household survey were prepared via Kobo Toolbox. This concluded the field tasks. The collected data was then processed by ArcGIS and QGIS to produce land cover and land-use maps as instructed. All other associated deliverables were compiled along with the maps for submission.\n\n The final task was to arrange workshops with Stakeholders to prepare an action plan."
+    },
+    {
+      "id": "2",
+      "slug": "geospatial-dashboard-for-district-development-plan-coxs-bazar",
+      "text1": "To address differnt issues in Cox’s Bazar district, the District Administration and the Cabinet Division decided to start a Development Plan for Cox’s Bazar District. While encouraging social cohesion, the strategy matched with national development plans and the Sustainable Development Goals. The plan’s first phase established a framework for local responses to sectoral concerns and priorities, and the second phase, which is now underway, will address the District’s medium-term growth and development needs.A dashboard is developed showing the development status of Cox’s Bazar district. The dashboard is developed using R-programming and three softwares: ArcMap, MS office, Rstudio.",
+      "stepSection": {
+        "heading": "Steps:",
+        "steps": [
+          "Data preparation using shapefile and excel associated software.",
+          "Building dashboard using shiny dashboard platform of R-programming",
+          "Deploying dashboard in shinyapp.io server and storing data in shinyapp.io server"
+        ]
+      },
+      "text2": "The purpose of the dashboard is to improve the government of Bangladesh’s institutional ability to analyze, understand, and communicate physical and socio-economic feature characteristics, as well as to integrate associated information into development planning and budgeting, policies, and programs.",
+      "images": {
+        "src": "/images/c-1.jpg",
+        "alt": "Cox's Bazar District Development Dashboard screenshot"
+      },
+      "stepSection2": {
+        "heading": "On the navigation bar there are 5 main tabs:",
+        "steps": [
+          "|Physical feature map| It shows the Headquarters, Educational Institution, Community clinic, Growth Centre, Socio-economic facilities, Rural Market, Cyclone shelter, Ashrayan with google imagery/ satellite imagery as base map.",
+          "|Priority map| It has two sections: Upazila priority map and Union priority map. The upazila priority map shows upazila wise development priorities (Disaster, Education, Road and Communication) of the government. The union priority map shows union wise development priorities (Agriculture, Citizen service, disaster, drainage, economic activities, Education, energy, gender, Environment, health, ICT, Infrastructure, Law, Recreation facilities, WASH, Tourism, Road and Communication etc.) of the government.",
+          "|Investment status| It shows sector wise budget map and chart for development plans.",
+          "|About| It contains the download link of the manual for the dashboard. ",
+          "|Data view| It shows details data of all the development plans."
+        ]
+      }
+    },
+    {
+      "id": "3",
+      "slug": "training-on-flood-risk-assessment-using-geospatial-and-statistical-techniques",
+      "text": "A flood risk assessment (FRA) is a document that analyzes and evaluates all types of flooding risks to and from a development proposal in order to determine the danger of flooding from groundwater, river (fluvial), surface water (pluvial), estuary/coastal (tidal), or sewage sources.\n\nFor the training purpose, the risk of north east Bangladesh (Haor basin) is assessed for pre-monsoon flood by developing an integrated risk model. GIS based multi-criteria decision analysis and analytical hierarchy process (AHP) are used in the flood risk mapping. For flood risk mapping, flood hazard and flood vulnerability map are created.",
+      "images": {
+        "src": "/images/training-1.png",
+        "alt": "Inundation extent (DFO) map of Bangladesh"
+      }
+    },
+    {
+      "id": "6",
+      "slug": "rural-renewable-energy-project-rrep-sierra-leone-wp6-matching-grant",
+      "text": "Through this work package, RREP aims at building a private sector engagement and strengthening strategy based on a deep understanding of local market systems. The purpose is to create productive usage economies in mini-grid catchment regions, as well as to aid the commercial viability of privately operated mini-grids, as well as to boost local revenue and jobs. The dashboard for the project was created to improve and promote productive use in mini-grid areas in order to contribute to the local economic and social advancement of the communities, hence enhancing the well-being of those who were supported. One dashboard was made with ArcGIS while the other was made with an open-source platform (R shiny).The dashboard has a total of 11 bars.",
+      "images": {
+        "src": "/images/udgierg.jpg",
+        "alt": "RREP Dashboard screenshot"
+      }
+    },
+    {
+      "id": "7",
+      "slug": "aerial-drone-survey-for-khatunganj-chattogram-under-nrp-project",
+      "text": "The UAV Survey was done to acquire stereo images (360 panorama photos) in the Study Area. The study area was derived into grids for the smooth operation of the UAV. This was a required step because the UAV cannot fly longer than 30 minutes due to technical restrictions.After which semi-permanent markers were established such that they were visible from the UAV.  After the image acquisition, it was processed into Orthophotos as GeoTIFF of the Study Area with at least 5 cm GSD or lower.  The Digital Surface Model (DSM) and the Digital Terrain Model (DTM) of the Study area were created. Highly precise Ground Control Points (GCP) were collected from these markers for image Geo-rectification using GNSS-RTK Method.",
+      "images": [
+        {
+          "src": "/images/areal-1.jpg",
+          "alt": "Aerial Drone Survey Khatunganj"
+        },
+        {
+          "src": "/images/areal-2-768x416.png",
+          "alt": "Aerial Drone Survey Khatunganj"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "slug": "fatehabad-township-project",
+      "text": "The aim of this project is to publish street-level photo collections and conduct property surveys that may identify the land use of the surveyed location and ownership of the lands. In this photo survey, location-enabled street-level photos were collected using KoBoToolbox. Two images were taken, in addition to the location. One is for land ownership (billboard photo) and the other is for land use.\n\nIn this photo survey, location-enabled street-level photos were collected using KoBoToolbox. Two images were taken, in addition to the location. One is for land ownership (billboard photo) and the other is for land use.\n\nCollected photos were then combined with relevant survey questions in an online map, and shared with the photos. It can be used to review street-level photos of land ownership and use.",
+      "stepSection": {
+        "heading": "Steps followed for mobile based data collection (KoBoToolbox)-",
+        "steps": [
+          "Forms are designed with different types of questions- Location, Photos. ",
+          "Project is shared with data collectors. ",
+          "Data collection. ",
+          "Visualizing collected data on a map"
+        ]
+      }
+    },
+    {
+      "id": "8",
+      "slug": "dhaka-earthquake-emergency-preparedness-enhancing-resilience-deeper-risk-and-resource-mapping",
+      "text1": "To support the progress towards SDG goal 11 of sustainable cities and communities- contributing to reducing the destruction rates and scale of secondary impacts from earthquakes and major emergencies among the population of Dhaka City.\n\nThe focus was to mainly demarcate the zone that is more likely to suffer from secondary impacts such as Fire Hazards and Damage from Infrastructure on a micro-level from the selected wards. This project aims to demarcate the spatially risky zones, locate the resources, and determine the best route by analyzing the road network to reach the impaired location, subdue the hazard, and evacuate the residents. Simultaneously introduce an App that will allow the affected people to get notified during such an outbreak.",
+      "images": {
+        "src": "/images/earthquiqe.jpg",
+        "alt": "Inundation extent (DFO) map of Bangladesh"
+      },
+      "text2": "The data collection for this project is done by using KoBo Toolbox, paper maps, and by integrating that data in ArcGIS. At the beginning of the study, there were some countermeasures required for the smooth operation of the project. various data sets were collected through Google Earth Pro, Google Satellite Imagery, Open Street Map, and through collecting and digitizing official maps of Dhaka South City Corporation. These data sets were compiled and then integrated via ArcGIS to prepare the maps that the volunteers were used to identify and specify the characteristics of the feature (Educational Institution, Open Space, Healthcare Facility, Fire Hydrant, Water Pump, Place of Storing Flammable Materials, Transformers, Fire Service and Civil Defense, Vulnerable Structure, Ward Councilor Office, Water Logged Area)\n\nThe KoBo Questionnaire was also prepared beforehand. Regarding these steps, a training session was held to make the volunteers familiar with the tools and techniques that were used later on the field.\n\nIn each ward, a team of two volunteers was sent to collect data. They were given paper maps as well as access to the questionnaire in KoBo Toolbox because- while the data could be collected in real-time showing the location, the accuracy would have been less than 10 meters in the KoBo Questionnaire. Each ward was divided into 8 sections therefore the two volunteers would be provided 8 maps. When they visited the study area they had to reach out to a suitable respondent who would help the volunteers provide the details about the feature. The data was saved offline when there was no internet connection and after it is restored the data was uploaded to the main online database.\n\nAfter the respondent had given input to help fill out the specifics of the feature, the volunteers had to plot the exact location of the feature in the paper map. This process was carried out keeping in mind the position of the volunteers, and if the demarcation and identification made a line with reality, the features were marked and identified either in point or area and were Given an ID (“Ward No” e.g., W1 and then Map id M1) beside the marking location. Then the name of the feature was written down on white paper. Each feature would have a feature ID therefore by joining the ID of the digitized features to the datasets acquired from the KoBo Questionnaire via Spatial Join in ArcGIS, we would be able to see a complete attribute table of the variables. Any distortion in the output maps was cross-checked by comparing it to the data retrieved from the hard copy maps. Thus if any errors were to remain it would have been to a Minimum. The final step consisted of a workshop to validate and approve the work done and documentation of the final process.\n\nThe data was collected throughout 5 days (Day-1 (27/02/2021), Day-2 (28/02/2021), Day-3 (01/03/2021), Day-4 (04/03/2021), and Day-5 (05/03/2021). A total of 28 volunteers were sent to avail data within the 14 wards.\n\nOne of the results was a risk and resource map of each ward. In the total study area (14 Wards). A total of 1164 risk and resource features were identified in the 14 wards. it was assessed that risk features are predominant.\n\nAnother outcome was a map that one can use to gain a general understanding of the individual standpoint of each variable in every ward. Therefore, this was an interesting and informative find."
+    },
+    {
+      "id": "9",
+      "slug": "gis-mapping-of-11-sectors-and-bhoddhobhumi-of-bangladesh-liberation-war",
+      "text": "The required literature review was done accordingly and then the complete list of the genocide sites was collected from the Ministry of Liberation War Affairs. This list was comprised of a brief description and along with the mouza location of the site. the mouza shapefiles were collected from the personal database. and then the site locations were identified within the shapefiles and digitized and updated accordingly. the sector boundaries were finalized. and the final output was the maps of the 11 sectors.",
+      "images": [
+        {
+          "src": "/images/11-1.png",
+          "alt": "GIS Mapping of 11 Sectors and Bhoddhobhumi of Bangladesh Liberation War"
+        },
+        {
+          "src": "/images/11-2.jpg",
+          "alt": "GIS Mapping of 11 Sectors and Bhoddhobhumi of Bangladesh Liberation War"
+        }
+      ]
+    },
+    {
+      "id": "10",
+      "slug": "georeferencing-of-mouza-maps-of-15-polders-at-coastal-area-of-bangladesh-using-satellite-imageries",
+      "text1": "The objective of the project was GIS and Remote Sensing based georeferencing of mouza maps covering the 15 polders in four coastal districts (Patuakhali, Barguna, Khulna, and Satkhira) of Bangladesh using Satellite Imageries for fulfilmentment of the other studies of the main project ‘Feasibility Studies and Preparation of Detailed Design under Coastal Embankment Improvement Project Phase-II, (CEIP-II)’. It will help in land acquisition and resettlement requirements, as well as finding alternatives for the polder technique of coastal area safeguarding, as determined by the World Bank’s project appraisal criteria.\n\nThis project was carried out through collecting mouza maps and supporting data, satellite imagery acquisition, georeferencing mouza maps (Mouza sheet indexing, adding area shape file and satellite image, project coordinate system conversion, adding control points, table export, rectification, compression as JPEG and geodatabase export), conducting validation field survey, preparing an accuracy assessment report and submitting a final report.\n\nThe scanned mouza maps were collected from KMC and stored accordingly. There were approximately 684 Mouza distributed among 15 polders. Among these Mouzas, 389 Mouzas intersect 15 Polders Boundaries with a 50m Buffer Zone. A total of 550 Mouza sheets were received from 14 polders out of 15 Polders (except Polder 5) following specific parameters and criteria. There were an additional 6 partitions of sheets among those 550 sheets which make a total of 556 sheets.",
+      "stepSection": {
+        "heading": "The mouza sheets were georeferenced using coordinates from Open Source Satellite Imageries i.e., ESRI Base map /Google Earth. The projection system used was – Gulshan_303_BTM. This was done by selecting well-distributed GCPS such as common GCPs of neighboring mouzas, image features (L) and by edge matching (R). The individual parcel from the geo-rectified cadastral map was digitized; overlaying the digitized parcel layer on Orthophoto /satellite image by KMC Team. The output was:",
+        "steps": [
+          "Georeferenced Mouza Maps- (Raster- GeoTIFF)- under GMGI-CGR-JV",
+          "Mouza Boundaries Vectorization- (Vector- shapefiles)-Under KMC, GMGI-CGR-JV will not be responsible."
+        ]
+      },
+      "text2": "Of the provided 556 sheets, 553 sheets were successfully georeferenced and delivered them through 9 different slots. The remaining 3 sheets could not be georeferenced due to various obstructive causes.",
+      "images": [
+        {
+          "src": "/images/15-1.jpg",
+          "alt": "Georeferencing of Mouza Maps of 15 Polders at Coastal Area of Bangladesh using Satellite Imageries"
+        },
+        {
+          "src": "/images/15-2.jpg",
+          "alt": "Georeferencing of Mouza Maps of 15 Polders at Coastal Area of Bangladesh using Satellite Imageries"
+        }
+      ]
+    },
+    {
+      "id": "11",
+      "slug": "a-pilot-project-on-preparation-of-comprehensive-development-plan-for-nine-upazilas",
+      "title": "A Pilot Project on Preparation of Comprehensive Development Plan for Nine Upazilas",
+      "stepSection": {
+        "steps": [
+          "Awarded Package Name: Socie-Economic Survey",
+          "Awarded Package No: 4 (four)",
+          "Client: Urban Development Directorate (UDD)",
+          "Score: 82.33 out of 100",
+          "Awarded Date: 21 November 2022 ",
+          "Letter of Intent Signed on: 12th March 2023"
+        ]
+      },
+      "text": "Description: This is an ongoing project titled “A Pilot Project on the Preparation of Comprehensive Development Plan for Nine Upazilas,” which has been awarded Package No. 4 for the Socio-Economic Survey. The project is being carried out for the Urban Development Directorate (UDD), and has received a score of 82.33 out of 100. The Letter of Intent was signed on March 12, 2023."
+    },
+    {
+      "id": "12",
+      "slug": "digital-map",
+      "title": "Digital Map",
+      "stepSection": {
+        "steps": [
+          "Client: Banglalink Digital Communication Limited",
+          "Proposal Submission Date: 20 February, 2023"
+        ]
+      },
+      "text": "Description: The project involves the development of a digital map for Banglalink Digital Communication Limited. The proposal for the project was submitted on February 20, 2023."
+    },
+    {
+      "id": "13",
+      "slug": "an-integrated-web-portal-to-access-data-sources-for-public-health-planning-in-bangladesh",
+      "title": "An integrated web portal to access data sources for public health planning in Bangladesh",
+      "stepSection": {
+        "steps": [
+          "Potential Funder: Global Development Network (GDN)",
+          "Potential Funding Category: Japanese Award for Outstanding Research on Development (ORD) 2022",
+          "Current Status: Undergoing Second Review",
+          "Proposal Submission Date: January 6, 2023",
+          "Second Review Submission Date: February 21, 2023",
+          "Description: The project is titled “Development of an Integrated Web Portal for Accessing Data Sources for Public Health Planning in Bangladesh.” The Global Development Network (GDN) is being considered as a potential funder for the project, under the Japanese Award for Outstanding Research on Development (ORD) 2022 funding category. As of now, the project is under its second review. The proposal was initially submitted on January 6, 2023, and the submission date for the second review was on February 21, 2023."
+        ]
+      }
+    },
+    {
+      "id": "14",
+      "slug": "gcp-collection-for-georeferencing-satellite-imageries-and-preparing-dtm-dsm-of-gk-project-area",
+      "text": "The goal of this project was to Collect highly precise Ground Control Points (GCP) for image Geo-rectification using the GNSS-RTK Method. This work is a part of the irrigated project undertaken in Kustia, Chuadanga, Magura, Jhinaidah districts. The GMGI Solutions Ltd.) was tasked with GCP acquisition which would later be used for georeferencing and image processing.\n\nPrior to the survey of 40 targets, RTK points were suggested. A base map was created indicating the target ground control points, possible Benchmarks and regulators.\n\nIn order to collect the GCP points, a benchmark (BM) was set up and a relative level (RL) was selected based on the regulator reference level as per the instructions. After the set-up, the ground control points were collected in close proximity to the target points. \n\nThe deliverables were Ground Control Points, 4 images surrounding the GCP location and the sketch of the RTK survey.",
+      "images": {
+        "src": "/images/gcp.jpg",
+        "alt": "GCP Collection"
+      }
+    }
+  ]
+}

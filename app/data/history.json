@@ -1,0 +1,170 @@
+{
+    "servicesData": [
+    {
+      "id": "geospatial-data",
+      "slug": "geospatial-data",
+      "sections": [
+        {
+          "type": "text+images",
+          "title": "Our services are",
+          "bullets": [
+            "Making maps and 3D models of geographic features like rivers, mountains, and cities using GIS software and information from various sources like satellite imagery, aerial photography, and field surveys.",
+            "Offering assistance with large-scale spatial data management, storage, and organization.",
+            "Providing tools for accessing and analyzing the data",
+            "Hosting and maintaining GIS databases.",
+            "Utilizing GIS tools and methods to analyze spatial data and produce insights into geographic phenomena. This might entail studying data trends and patterns, projecting future trends, or simulating the effects of various scenarios.",
+            "Delivering consulting services to assist clients in comprehending and utilizing GIS technology and data in their operations or research. This could involve technical assistance, project planning, and training."
+          ],
+          "images": [
+            {
+              "src": "/images/gg-768x994.jpg",
+              "alt": "Admin 1: Division"
+            },
+            {
+              "src": "/images/hhj-1024x335.jpg",
+              "alt": "Admin 2: District"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "public-health",
+      "slug": "public-health",
+      "sections": [
+        {
+          "type": "text",
+          "title": "Our Services are",
+          "bullets": [
+            "We serve epidemiological studies in public health and respond to disease outbreaks more successfully by identifying at-risk populations and focusing interventions.",
+            "We also provide a web-based GIS dashboard that interacts with and visualizes disease epidemic and pandemic situations, healthcare access, and behavioral health."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geology",
+      "slug": "geology",
+      "sections": [
+        {
+          "type": "text+images",
+          "title": "Our team is able to offer",
+          "bullets": [
+            "Mapping and 3D modeling of geological phenomena and processes, such as faults, earthquakes, and erosion.",
+            "Organizing and managing a lot of spatial data, including geophysical data, satellite images, and geologic maps.",
+            "Analyzing the effects of natural resource development or environmental changes on the geology of an area."
+          ],
+          "images": [
+            {
+              "src": "/images/df-792x1024.jpg",
+              "alt": "Surface Geology of Bangladesh",
+              "caption": "Surface Geology of Bangladesh"
+            },
+            {
+              "src": "/images/gg-1-792x1024.jpg",
+              "alt": "Digital Elevation Model (DEM), Bangladesh",
+              "caption": "Digital Elevation Model (DEM), Bangladesh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "climatology",
+      "slug": "climate-change",
+      "sections": [
+        {
+          "type": "text",
+          "title": "Our climatologists and GIS analysts are skilled at researching climate change and its effects. We serves:",
+          "bullets": [
+            "Evaluating the accessibility, availability, and content of meteorological and climatological data sets",
+            "Keeping track of environmental changes",
+            "Developing, training, testing, and putting into use air quality forecasting models.",
+            "Extreme air quality events, such as wildfires, dust storms, and extended air quality episodes, are analyzed and forecasted.",
+            "Creating easily accessible public advisories to assist locals in limiting their exposure to poor air quality.",
+            "Creating and implementing new openly available products that display advisories, real-time air quality index readings, and forecasted air quality.",
+            "Developing interactive tools to display or analyze data on air quality, primarily with the aid of MATLAB App Designer, ESRI ArcGIS, and R Shiny."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hydrology",
+      "slug": "hydrology",
+      "sections": [
+        {
+          "type": "text+images",
+          "title": "The hydrological expert team at GMGI has years of experience. This group offers top-notch hydrogeology services. The services including-",
+          "numbered": false,
+          "images": [
+            {
+              "src": "/images/Colorful-Minimalist-Linear-Steps-Circular-Diagram.png",
+              "alt": "Surface Geology of Bangladesh"
+            },
+            {
+              "src": "/images/dhrtj-792x1024.jpg",
+              "alt": "Digital Elevation Model (DEM), Bangladesh"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "urban-and-regional-planning",
+      "slug": "urban-planning",
+      "sections": [
+        {
+          "type": "text",
+          "title": "We provide",
+          "bullets": [
+            "Designing and planning cities, regions, and other urban spaces using digital maps and models",
+            "Analyzing land use, transportation, demographics, and other crucial urban planning factors",
+            "Analyzing potential redevelopment sites and keeping track of the urban redevelopment project’s development"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agriculture",
+      "slug": "agriculture",
+      "sections": [
+        {
+          "type": "text",
+          "intro": "Modern satellite technology and processing algorithms allow for near real-time analytics tailored to the agricultural sector from satellite data, putting actionable data in the hands of farm management at the critical moment.",
+          "title": "Your agricultural fields can be remotely checked by GMGI Solutions Limited for the following:",
+          "bullets": [
+            "Collecting data on crop production",
+            "Crop health",
+            "Crop yield forecasting",
+            "Facilitating Crop rotation records",
+            "Mapping Soil Productivity",
+            "Assessment of Storm and Drought-Related Crop Damage",
+            "Remote field assessment",
+            "Disaster",
+            "Field stress identification",
+            "Pest identification"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "socioeconomic",
+      "slug": "socioeconomic",
+      "sections": [
+        {
+          "type": "text",
+          "title": "Our services are:",
+          "bullets": [
+            "Combining and examining information from numerous sources, such as demographics, income, education, and other indicators",
+            "Making maps that show how poverty, unemployment, or educational attainment are distributed within a region",
+            "Making \"heat maps\" or \"choropleth maps\" that display a region's concentration or density of a specific indicator, such as poverty or income level.",
+            "Providing data visualization and decision-support tools to organizations and governments that help them to make more informed decisions",
+            "Evaluating how policies and interventions affect socioeconomic results",
+            "Consultancy and advisory services on socioeconomic issues and best practices for organizations and governments",
+            "Developing web gis dashboard."
+          ]
+        }
+      ]
+    }
+  ]
+}
