@@ -25,7 +25,7 @@
       }
     },
     {
-      "id": "5",
+      "id": "2",
       "slug": "digital-survey-and-3d-modelling-for-jail-khal-in-barisal-city-corporation",
       "text1": "This survey was undertaken to identify the illegal infrastructure within the Jail Khal area.  At the beginning of the survey, highly precise Ground Control Points (GCP) were collected for image Geo-rectification using the GNSS-RTK Method. After the control points of the study area were identified, the aerial imagery of the study area was collected.  UAV Survey was carried out to acquire stereo images in the Study Area and was executed by the GMGI Solutions Ltd and Centre for Geoservices and Research (CGR)",
       "images": {
@@ -35,7 +35,7 @@
       "text2": "360 Panorama Photos of the study area were captured along with 4k video as per requirement. After the image acquisition, they were processed to create an orthophoto to digitize the physical features (Buildings, houses, industries, roads, water bodies, etc.).  After the digitization of the features of the area, the shapefile was buffered accordingly to identify the infrastructure within that range.\n\n After this step, the questionnaires for the physical feature survey and household survey were prepared via Kobo Toolbox. This concluded the field tasks. The collected data was then processed by ArcGIS and QGIS to produce land cover and land-use maps as instructed. All other associated deliverables were compiled along with the maps for submission.\n\n The final task was to arrange workshops with Stakeholders to prepare an action plan."
     },
     {
-      "id": "2",
+      "id": "3",
       "slug": "geospatial-dashboard-for-district-development-plan-coxs-bazar",
       "text1": "To address differnt issues in Cox’s Bazar district, the District Administration and the Cabinet Division decided to start a Development Plan for Cox’s Bazar District. While encouraging social cohesion, the strategy matched with national development plans and the Sustainable Development Goals. The plan’s first phase established a framework for local responses to sectoral concerns and priorities, and the second phase, which is now underway, will address the District’s medium-term growth and development needs.A dashboard is developed showing the development status of Cox’s Bazar district. The dashboard is developed using R-programming and three softwares: ArcMap, MS office, Rstudio.",
       "stepSection": {
@@ -63,7 +63,7 @@
       }
     },
     {
-      "id": "3",
+      "id": "4",
       "slug": "training-on-flood-risk-assessment-using-geospatial-and-statistical-techniques",
       "text": "A flood risk assessment (FRA) is a document that analyzes and evaluates all types of flooding risks to and from a development proposal in order to determine the danger of flooding from groundwater, river (fluvial), surface water (pluvial), estuary/coastal (tidal), or sewage sources.\n\nFor the training purpose, the risk of north east Bangladesh (Haor basin) is assessed for pre-monsoon flood by developing an integrated risk model. GIS based multi-criteria decision analysis and analytical hierarchy process (AHP) are used in the flood risk mapping. For flood risk mapping, flood hazard and flood vulnerability map are created.",
       "images": {
@@ -72,7 +72,7 @@
       }
     },
     {
-      "id": "6",
+      "id": "5",
       "slug": "rural-renewable-energy-project-rrep-sierra-leone-wp6-matching-grant",
       "text": "Through this work package, RREP aims at building a private sector engagement and strengthening strategy based on a deep understanding of local market systems. The purpose is to create productive usage economies in mini-grid catchment regions, as well as to aid the commercial viability of privately operated mini-grids, as well as to boost local revenue and jobs. The dashboard for the project was created to improve and promote productive use in mini-grid areas in order to contribute to the local economic and social advancement of the communities, hence enhancing the well-being of those who were supported. One dashboard was made with ArcGIS while the other was made with an open-source platform (R shiny).The dashboard has a total of 11 bars.",
       "images": {
@@ -81,7 +81,7 @@
       }
     },
     {
-      "id": "7",
+      "id": "6",
       "slug": "aerial-drone-survey-for-khatunganj-chattogram-under-nrp-project",
       "text": "The UAV Survey was done to acquire stereo images (360 panorama photos) in the Study Area. The study area was derived into grids for the smooth operation of the UAV. This was a required step because the UAV cannot fly longer than 30 minutes due to technical restrictions.After which semi-permanent markers were established such that they were visible from the UAV.  After the image acquisition, it was processed into Orthophotos as GeoTIFF of the Study Area with at least 5 cm GSD or lower.  The Digital Surface Model (DSM) and the Digital Terrain Model (DTM) of the Study area were created. Highly precise Ground Control Points (GCP) were collected from these markers for image Geo-rectification using GNSS-RTK Method.",
       "images": [
@@ -96,7 +96,7 @@
       ]
     },
     {
-      "id": "4",
+      "id": "7",
       "slug": "fatehabad-township-project",
       "text": "The aim of this project is to publish street-level photo collections and conduct property surveys that may identify the land use of the surveyed location and ownership of the lands. In this photo survey, location-enabled street-level photos were collected using KoBoToolbox. Two images were taken, in addition to the location. One is for land ownership (billboard photo) and the other is for land use.\n\nIn this photo survey, location-enabled street-level photos were collected using KoBoToolbox. Two images were taken, in addition to the location. One is for land ownership (billboard photo) and the other is for land use.\n\nCollected photos were then combined with relevant survey questions in an online map, and shared with the photos. It can be used to review street-level photos of land ownership and use.",
       "stepSection": {
@@ -168,10 +168,10 @@
           "Client: Urban Development Directorate (UDD)",
           "Score: 82.33 out of 100",
           "Awarded Date: 21 November 2022 ",
-          "Letter of Intent Signed on: 12th March 2023"
+          "Letter of Intent Signed on: 12th March 2023",
+          "Description: This is an ongoing project titled “A Pilot Project on the Preparation of Comprehensive Development Plan for Nine Upazilas,” which has been awarded Package No. 4 for the Socio-Economic Survey. The project is being carried out for the Urban Development Directorate (UDD), and has received a score of 82.33 out of 100. The Letter of Intent was signed on March 12, 2023."
         ]
-      },
-      "text": "Description: This is an ongoing project titled “A Pilot Project on the Preparation of Comprehensive Development Plan for Nine Upazilas,” which has been awarded Package No. 4 for the Socio-Economic Survey. The project is being carried out for the Urban Development Directorate (UDD), and has received a score of 82.33 out of 100. The Letter of Intent was signed on March 12, 2023."
+      }
     },
     {
       "id": "12",
@@ -180,10 +180,10 @@
       "stepSection": {
         "steps": [
           "Client: Banglalink Digital Communication Limited",
-          "Proposal Submission Date: 20 February, 2023"
+          "Proposal Submission Date: 20 February, 2023",
+          "Description: The project involves the development of a digital map for Banglalink Digital Communication Limited. The proposal for the project was submitted on February 20, 2023."
         ]
-      },
-      "text": "Description: The project involves the development of a digital map for Banglalink Digital Communication Limited. The proposal for the project was submitted on February 20, 2023."
+      }
     },
     {
       "id": "13",

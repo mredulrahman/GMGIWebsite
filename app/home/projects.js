@@ -244,7 +244,7 @@ export default function ProjectsSection() {
                 exit="exit"
                 variants={cardVariants}
               >
-                <Link href={`/view/${project.slug}`}>
+                <Link href={`/${[11, 12, 13].includes(project.id) ? 'project' : 'view'}/${project.slug}`}>
                   <ProjectCard project={project} />
                 </Link>
               </motion.div>

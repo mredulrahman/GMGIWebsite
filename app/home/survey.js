@@ -2,16 +2,16 @@ import styled from 'styled-components';
 import Image from 'next/image';
 
 const equipment = [
-  { id: 1, name: "Total Station", img: "/images/f.jpg"},
-  { id: 2, name: "Total Station", img: "/images/g-rotated.jpg"},
-  { id: 3, name: "GNSS RTK", img: "/images/rtx.jpg"},
-  { id: 4, name: "Ground Penetrating Rader", img: "/images/j.jpg"},
+  { id: 1, name: "Total Station", img: "/images/f.jpg" },
+  { id: 2, name: "Total Station", img: "/images/g-rotated.jpg" },
+  { id: 3, name: "GNSS RTK", img: "/images/rtx.jpg" },
+  { id: 4, name: "Ground Penetrating Rader", img: "/images/j.jpg" },
   { id: 5, name: "Pipe Locator", img: "/images/l-rotated.jpg" },
-  { id: 6, name: "Eco Sounder", img: "/images/v-new-2.jpg"},
+  { id: 6, name: "Eco Sounder", img: "/images/v-new-2.jpg" },
   { id: 7, name: "Drone", img: "/images/h.jpg" },
   { id: 8, name: "Digital Level", img: "/images/z-1.jpg" },
   { id: 9, name: "Auto Level", img: "/images/stand-new.jpg" },
-  { id: 10, name: "Handheld GPS", img: "/images/x-1.jpg"}
+  { id: 10, name: "Handheld GPS", img: "/images/x-1.jpg" }
 ];
 
 function ArrowCircleIcon() {
@@ -100,7 +100,7 @@ function EquipmentCard({ item }) {
             </div>
           </div>
           <div className="card-back">
-            <Image 
+            <Image
               src={item.img}
               alt={item.name}
               fill
@@ -119,8 +119,8 @@ export default function SurveyEquipment() {
     <section>
       <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Survey Equipment</h1>
       <StyledWrapper>
-        <div className="max-w-6xl mx-auto py-1">
-          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-4">
+        <div className="max-w-7xl mx-auto py-1">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-5 gap-4">
             {equipment.map((item) => (
               <EquipmentCard key={item.id} item={item} />
             ))}

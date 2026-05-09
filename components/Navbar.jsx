@@ -2,13 +2,13 @@
 import React, { useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
-import 'primereact/resources/themes/lara-light-indigo/theme.css';  
-import 'primereact/resources/primereact.min.css';  
+import 'primereact/resources/themes/lara-light-indigo/theme.css';
+import 'primereact/resources/primereact.min.css';
 import 'primeicons/primeicons.css';
 
 
 const navItems = [
-  { label: "Home" },  
+  { label: "Home" },
   {
     label: "About Us",
     items: [
@@ -26,13 +26,13 @@ const navItems = [
         label: "Potential",
         separator: true,
         items: [
-          { label: "An integrated web portal to access data sources for public health planning in Bangladesh" },
-          { label: "Digital Map" }
+          { label: "An integrated web portal to access data sources for public health planning in Bangladesh", url: "/project/an-integrated-web-portal-to-access-data-sources-for-public-health-planning-in-bangladesh" },
+          { label: "Digital Map", url: "/project/digital-map" }
         ]
       },
       {
         label: "Ongoing",
-        items: [{ label: "A pilot project on preparation of comprehensive development plan for nine upazilas" }]
+        items: [{ label: "A pilot project on preparation of comprehensive development plan for nine upazilas", url: "/project/a-pilot-project-on-preparation-of-comprehensive-development-plan-for-nine-upazilas" }]
       },
       {
         label: "Completed",
@@ -43,8 +43,20 @@ const navItems = [
   {
     label: "Services",
     items: [
+      { label: "One Stop Solutions" },
+      { label: "Research Solutions" },
+      { label: "Mapping Solutions" },
+      { label: "Software Solutions" },
+      { label: "Survey Solutions" },
+      { label: "HR Solutions" },
+      { label: "Training Solutions" }
+    ]
+  },
+  {
+    label: "Product",
+    items: [
       {
-        label: "Digital Product", 
+        label: "Digital Product",
         items: [
           { label: "Dashboard" },
           { label: "Apps" },
@@ -57,23 +69,11 @@ const navItems = [
         label: "Survey Equipment"
       },
       {
-        label: "GeoLive" 
+        label: "GeoLive"
       }
     ]
   },
-  {
-    label: "Product",
-    items: [
-      { label: "One Stop Solutions" },
-      { label: "Research Solutions" },
-      { label: "Mapping Solutions" },
-      { label: "Software Solutions" },
-      { label: "Survey Solutions" },
-      { label: "HR Solutions" },
-      { label: "Training Solutions" }
-    ]
-  },
-  { label: "Contact Us" } 
+  { label: "Contact Us" }
 ];
 
 // Animation variants for the dropdown container
@@ -109,11 +109,11 @@ const NavItem = ({ item, isRoot = true }) => {
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
-      <Link 
-        href={item.url || "#"} 
+      <Link
+        href={item.url || "#"}
         className={`flex items-center justify-between gap-4 no-underline hover:text-gray-200 transition-colors ${isRoot ? 'font-semibold text-white' : 'text-white text-sm'}`}
       >
-        <span className="whitespace-nowrap">{item.label}</span>
+        <span className={isRoot ? "whitespace-nowrap" : "whitespace-normal"}>{item.label}</span>
         {hasItems && (
           <i className={`pi ${isRoot ? 'pi-angle-down' : 'pi-angle-right'} text-xs text-white`} />
         )}
@@ -123,9 +123,8 @@ const NavItem = ({ item, isRoot = true }) => {
         <AnimatePresence>
           {isHovered && (
             <motion.div
-              className={`absolute z-50 bg-[#25ABB9] border border-cyan-600/30 shadow-xl w-55 ${
-                isRoot ? 'top-full left-0 mt-1' : 'left-full top-0 -ml-1'
-              }`}
+              className={`absolute z-50 bg-[#25ABB9] border border-cyan-600/30 shadow-xl w-64 md:w-55 ${isRoot ? 'top-full left-0 mt-1' : 'left-full top-0 -ml-1'
+                }`}
               initial="exit"
               animate="enter"
               exit="exit"

@@ -1,13 +1,19 @@
-// app/view/[slug]/page.jsx
-
 import data from "@/app/data/projects_views.json";
 import Image from "next/image";
-import { notFound } from "next/navigation";
+import { notFound, redirect } from "next/navigation";
+
+const EXCLUDED_SLUGS = [
+    "a-pilot-project-on-preparation-of-comprehensive-development-plan-for-nine-upazilas",
+    "digital-map",
+    "an-integrated-web-portal-to-access-data-sources-for-public-health-planning-in-bangladesh"
+];
 
 const { pagesData } = data;
 
 export async function generateStaticParams() {
-    return pagesData.map((p) => ({ slug: p.slug }));
+    return pagesData
+        .filter((p) => !EXCLUDED_SLUGS.includes(p.slug))
+        .map((p) => ({ slug: p.slug }));
 }
 
 export async function generateMetadata({ params }) {
@@ -128,14 +134,14 @@ const KeyValueCard = ({ heading, steps }) => {
         const colonIdx = s.indexOf(":");
         if (colonIdx === -1) return false;
         const key = s.slice(0, colonIdx).trim().toLowerCase();
-        return key !== "description";
+        return key;
     });
 
-    const descStep = steps.find((s) => {
-        const colonIdx = s.indexOf(":");
-        if (colonIdx === -1) return false;
-        return s.slice(0, colonIdx).trim().toLowerCase() === "description";
-    });
+    // const descStep = steps.find((s) => {
+    //     const colonIdx = s.indexOf(":");
+    //     if (colonIdx === -1) return false;
+    //     return s.slice(0, colonIdx).trim().toLowerCase() === "description";
+    // });
 
     return (
         <div className="space-y-6">
@@ -163,11 +169,11 @@ const KeyValueCard = ({ heading, steps }) => {
             </div>
 
             {/* Description paragraph rendered separately below the card */}
-            {descStep && (
+            {/* {descStep && (
                 <p className="text-black text-lg leading-relaxed">
                     {descStep.slice(descStep.indexOf(":") + 1).trim()}
                 </p>
-            )}
+            )} */}
         </div>
     );
 };
@@ -209,11 +215,7 @@ const DynamicPageRenderer = ({ page }) => {
                 }
 
                 // Images
-                if (
-                    key === "images" ||
-                    (typeof value === "object" && !Array.isArray(value) && value?.src) ||
-                    (Array.isArray(value) && value[0]?.src)
-                ) {
+                if (key === "images" || (typeof value === "object" && !Array.isArray(value) && value?.src) || (Array.isArray(value) && value[0]?.src)) {
                     return <ImageBlock key={key} images={value} />;
                 }
 
@@ -234,6 +236,11 @@ const DynamicPageRenderer = ({ page }) => {
 ───────────────────────────────────────── */
 export default async function ProjectPage({ params }) {
     const { slug } = await params;
+
+    if (EXCLUDED_SLUGS.includes(slug)) {
+        redirect(`/project/${slug}`);
+    }
+
     const page = pagesData.find((p) => p.slug === slug);
     if (!page) notFound();
 
