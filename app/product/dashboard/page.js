@@ -111,7 +111,7 @@ function Dashboard() {
                                             height={300}
                                             className="object-cover w-full h-full"
                                         />
-                                        <div className="absolute inset-0 bg-blue-500/40 pointer-events-none"></div>
+
                                     </div>
                                     <div className="card-back">
                                         <p><strong>Project Name:</strong> GTCL Pipeline Survey and GIS Preparation</p>
@@ -133,7 +133,6 @@ function Dashboard() {
                                             height={300}
                                             className="object-cover w-full h-full"
                                         />
-                                        <div className="absolute inset-0 bg-blue-500/40 pointer-events-none"></div>
                                     </div>
                                     <div className="card-back">
                                         <p><strong>Project Name:</strong> Rural Renewable Energy Project (RREP), Sierra Leone: WP6 Matching Grant</p>
@@ -164,7 +163,6 @@ function Dashboard() {
                                             height={300}
                                             className="object-cover w-full h-full"
                                         />
-                                        <div className="absolute inset-0 bg-blue-500/40 pointer-events-none"></div>
                                     </div>
                                     <div className="card-back">
                                         <p><strong>Project Name:</strong> UKAID Livelihoods and DRR Project of Barishal City Corporation, BRC</p>
@@ -186,7 +184,6 @@ function Dashboard() {
                                             height={300}
                                             className="object-cover w-full h-full"
                                         />
-                                        <div className="absolute inset-0 bg-blue-500/40 pointer-events-none"></div>
                                     </div>
                                     <div className="card-back">
                                         <p><strong>Project Name:</strong> Geospatial Dashboard District Development and Growth Priorities (DDGP) Cox’s Bazar, Bangladesh​, UNDP</p>
