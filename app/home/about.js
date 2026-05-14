@@ -71,7 +71,7 @@ const AboutSlider = ({ Images }) => {
 
 function AboutSection () {
     return (
-        <section className="">
+        <section id="about" className="">
             <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">About us</h1>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 items-center px-4">
                 <div className="text-lg md:text-xl text-[rgb(13,70,70)] mt-6">

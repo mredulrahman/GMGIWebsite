@@ -79,7 +79,7 @@ function MemberCard({ member }) {
 
 export default function ExpertTeam() {
   return (
-    <section className="">
+    <section id="our-expert-team" className="">
         <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Our Expert Team</h1>
       <div className="max-w-6xl mx-auto px-4 py-10">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">

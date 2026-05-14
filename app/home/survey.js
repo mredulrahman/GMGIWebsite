@@ -116,7 +116,7 @@ function EquipmentCard({ item }) {
 
 export default function SurveyEquipment() {
   return (
-    <section>
+    <section id="survey-equipment">
       <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Survey Equipment</h1>
       <StyledWrapper>
         <div className="max-w-7xl mx-auto py-1">

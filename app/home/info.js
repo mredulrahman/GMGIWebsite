@@ -118,7 +118,7 @@ export default function WhatMakesUsDifferent() {
   const toggle = (id) => setOpenId((prev) => (prev === id ? null : id));
 
   return (
-    <section>
+    <section id="whatmakesusdifferent">
         <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">What Makes Us Different</h1>
       <div className="max-w-6xl mx-auto p-3">
         <div className="flex flex-col lg:flex-row items-center gap-10">

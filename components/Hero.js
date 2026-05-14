@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 function Hero() {
   return (
-     <section className="relative w-full h-screen bg-cover bg-center opacity-95 bg-no-repeat" style={{ backgroundImage: 'url(/hero/globe.jpg)' }}>
+     <section id="hero" className="relative w-full h-screen bg-cover bg-center opacity-95 bg-no-repeat" style={{ backgroundImage: 'url(/hero/globe.jpg)' }}>
       <div className="absolute inset-0 bg-black opacity-50"></div>
       <div className="relative z-10 flex items-center justify-center h-full text-center text-white px-4 sm:px-12">
         <div className="max-w-5xl mx-auto">

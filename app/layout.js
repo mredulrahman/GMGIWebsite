@@ -1,13 +1,11 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
 import "@/styles/home.module.css";
-// import "./components.css";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { config } from '@fortawesome/fontawesome-svg-core'
 import '@fortawesome/fontawesome-svg-core/styles.css'
-config.autoAddCss = false;
+
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -40,7 +38,7 @@ export default function RootLayout({ children }) {
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
-          <main>{children}</main>
+        <main className="flex-1">{children}</main>
         <Footer />
       </body>
     </html>
