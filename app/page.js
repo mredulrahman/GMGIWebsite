@@ -1,4 +1,3 @@
-"use client"
 import Hero from '@/components/Hero';
 import AboutSection from './home/about';
 import LatestnewsSection from './home/latestnews';
@@ -14,21 +13,21 @@ import OurClients from './home/client';
 export default function Home() {
     return (
         <>
-            <Hero/>
+            <Hero />
             <div className="relative bg-[url('/dashboard/abstract-geometric-white-background-free-vector.jpg')] bg-cover bg-center bg-no-repeat">
                 <div className="absolute inset-0 bg-teal-200/20 pointer-events-none"></div>
                 <div className="relative z-10">
-                    <AboutSection/>
-                    <MissionSection/>
-                    <LatestnewsSection/>
-                    <WorkSection/>
-                    <WhatMakesUsDifferent/>
-                    <ProjectsSection/>
-                    <ExpertTeam/>
-                    <SurveyEquipment/>
+                    <AboutSection />
+                    <MissionSection />
+                    <LatestnewsSection />
+                    <WorkSection />
+                    <WhatMakesUsDifferent />
+                    <ProjectsSection />
+                    <ExpertTeam />
+                    <SurveyEquipment />
                 </div>
             </div>
-                    <OurClients/>
+            <OurClients />
         </>
     );
-}
+}

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faComputer, faLaptopCode, faShop, faFileVideo } from '@fortawesome/free-solid-svg-icons';
 import { faMedapps, faSoundcloud } from '@fortawesome/free-brands-svg-icons';
@@ -9,6 +10,7 @@ const services = [
         ),
         title: "Website Design & Development",
         desc: "Custom, responsive websites tailored to your brand, including e-commerce solutions for seamless online sales.",
+        url: "/product/website"
     },
     {
         icon: (
@@ -16,6 +18,7 @@ const services = [
         ),
         title: "Customized Software",
         desc: "Tailored software to streamline business processes, including ERP and CRM systems.",
+        url: "/service/customized-software-solutions"
     },
     {
         icon: (
@@ -23,6 +26,7 @@ const services = [
         ),
         title: "Software Maintenance",
         desc: "Ongoing support, performance optimization, and feature updates for existing software.",
+        url: "/service/software-maintenance"
     },
     {
         icon: (
@@ -30,6 +34,7 @@ const services = [
         ),
         title: "E-commerce Services",
         desc: "Secure, scalable e-commerce platforms with payment integration and intuitive shopping carts.",
+        url: "/service/e-commerce-services"
     },
     {
         icon: (
@@ -37,6 +42,7 @@ const services = [
         ),
         title: "Mobile Apps Development",
         desc: "Cross-platform, Android, and hybrid app development to reach broad audiences.",
+        url: "/product/apps"
     },
     {
         icon: (
@@ -44,6 +50,7 @@ const services = [
         ),
         title: "Cloud Solutions",
         desc: "Cloud storage, application development, and infrastructure management for scalability and security.",
+        url: "/service/cloud-solutions"
     },
     {
         icon: (
@@ -51,6 +58,7 @@ const services = [
         ),
         title: "API Integration",
         desc: "Custom API creation and third-party integration for enhanced software functionality.",
+        url: "/service/api-development-and-integration"
     },
     {
         icon: (
@@ -58,6 +66,7 @@ const services = [
         ),
         title: "Graphics Solutions",
         desc: "Branding, marketing collateral, and intuitive UI/UX design to boost engagement.",
+        url: "/product/graphics-design"
     },
     {
         icon: (
@@ -65,6 +74,7 @@ const services = [
         ),
         title: "Dashboard Development",
         desc: "Geospatial and business intelligence dashboards for real-time data insights and decision-making.",
+        url: "/product/dashboard"
     },
     {
         icon: (
@@ -72,6 +82,7 @@ const services = [
         ),
         title: "Digital Marketing",
         desc: "SEO, social media, content, and email marketing to drive traffic and boost online presence.",
+        url: "/service/digital-marketing"
     },
     {
         icon: (
@@ -79,6 +90,7 @@ const services = [
         ),
         title: "Domain and Hosting",
         desc: "Domain registration, reliable web hosting, and managed hosting services for optimal performance.",
+        url: "/service/domain-and-hosting-services"
     },
     {
         icon: (
@@ -86,6 +98,7 @@ const services = [
         ),
         title: "Videography",
         desc: "Drone driven 3D modelling, 3D Travel Route Map Animation Video",
+        url: "/product/videography"
     },
 ];
 
@@ -112,7 +125,7 @@ export default function Page() {
                     </h2>
                     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
                         {services.map((service, i) => (
-                            <ServiceCard key={i} service={service} index={i} />
+                            <ServiceCard key={i} service={service} index={i} url={service.url} />
                         ))}
                     </div>
                 </section>
@@ -142,8 +155,6 @@ export default function Page() {
 function ServiceCard({ service }) {
     return (
         <div className="group relative bg-white rounded-2xl border border-stone-200 shadow-lg shadow-stone-600 cursor-pointer overflow-hidden hover:-translate-y-2 transition-transform duration-300 ease-out">
-
-            {/* ── Blue overlay: slides up from bottom on hover ── */}
             <div
                 className="
           absolute bottom-0 left-0
@@ -153,28 +164,26 @@ function ServiceCard({ service }) {
           translate-y-full
           group-hover:translate-y-0
           transition-transform duration-500 ease-out
-          z-10
+          z-100
           flex flex-col justify-between
           px-7 pt-5 pb-6">
-                {/* Text inside overlay — fades in */}
                 <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
                     <p className="text-white font-bold text-sm leading-tight">imgbb.com</p>
                     <p className="text-white/90 text-sm mt-1">image not found</p>
                 </div>
-                {/* Purple arrow button inside overlay — bottom-left */}
-
-
-                <div className="w-11 h-11 rounded-full bg-[#6c3fcf] flex items-center justify-center shadow-lg self-start opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
-                    <svg
-                        className="w-4 h-4 text-white"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2.5}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </div>
+                <Link href={service.url || '#'}>
+                    <div className="w-11 h-11 rounded-full bg-[#6c3fcf] flex items-center justify-center shadow-lg self-start opacity-0 group-hover:opacity-100 transition-opacity duration-300 delay-200">
+                        <svg
+                            className="w-4 h-4 text-white"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={2.5}
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
+                        </svg>
+                    </div>
+                </Link>
             </div>
             <div className="relative z-20 p-7 flex flex-col min-h-[300px]">
                 <div className="text-stone-800 mb-5">
@@ -186,17 +195,6 @@ function ServiceCard({ service }) {
                 <p className="text-stone-500 text-xl leading-none flex-1 mb-6">
                     {service.desc}
                 </p>
-                {/* <div className="w-11 h-11 rounded-full bg-stone-100 flex items-center justify-center shadow-sm self-start group-hover:opacity-0 transition-opacity duration-200">
-                    <svg
-                        className="w-4 h-4 text-stone-500"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2.5}
-                    >
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
-                    </svg>
-                </div> */}
             </div>
         </div>
     );

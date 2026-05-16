@@ -13,7 +13,7 @@ function Hero() {
             alt="GMGI Solutions Ltd Logo"
             width={120}
             height={120}
-            class="mx-auto md:w-[150px] md:h-[150px]"
+            className="mx-auto md:w-[150px] md:h-[150px]"
           />
           <div className="text-3xl sm:text-5xl md:text-6xl lg:text-[4rem] text-[#00e5c0] uppercase font-bold font-[times-new-roman] bg-black/40 backdrop-blur-none rounded-2xl my-4 py-2">
             <h1 className="animate__animated animate__slideInLeft animate__delay-0.5s">GMGI Solutions Ltd</h1>

@@ -126,6 +126,7 @@ const projects = [
 function PlaceholderImage() {
   return (
     <Image src="/images/flexia-preview.jpg"
+      alt="Placeholder Image"
       width={100}
       height={100}
       className="w-full h-full"
@@ -176,21 +177,19 @@ export default function ProjectsSection() {
       if (activeFilter === "ALL") {
         return true;
       }
-      // Special condition: Project with id 3 should appear in the "2022" filter
-      // while its tag remains "ONGOING".
       if (activeFilter === "2022" && p.id === 3) {
         return true;
+      }
+      if (activeFilter === "ONGOING" && p.id === 3) {
+        return false;
       }
       return p.tag === activeFilter;
     });
 
-  // Variants for filter buttons
-  const buttonVariants = {
-    hidden: { opacity: 0, y: -20 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
-  };
-
-  // Variants for project cards
+  // const buttonVariants = {
+  //   hidden: { opacity: 0, y: -20 },
+  //   visible: { opacity: 1, y: 0, transition: { duration: 0.3 } },
+  // };
   const cardVariants = {
     hidden: { opacity: 0, scale: 0.8 },
     visible: { opacity: 1, scale: 1, transition: { duration: 0.4 } },
@@ -201,7 +200,7 @@ export default function ProjectsSection() {
     <section id="completed" className="">
       <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Projects</h1>
       <div className="max-w-6xl mx-auto py-4">
-        <motion.div
+        <div
           className="flex flex-wrap justify-center gap-2 mb-10"
           initial="hidden"
           animate="visible"
@@ -210,35 +209,35 @@ export default function ProjectsSection() {
             visible: {
               opacity: 1,
               transition: {
-                staggerChildren: 0.05, // Stagger the appearance of buttons
+                staggerChildren: 0.05,
               },
             },
           }}
         >
           {filters.map((f) => (
-            <motion.button // Apply motion to each button
+            <button
               key={f}
               onClick={() => setActiveFilter(f)}
               className={`px-5 py-2 text-md font-normal tracking-wide border transition-colors duration-150 ${activeFilter === f
                 ? "bg-black text-white"
                 : "bg-[#25ABB9] text-white"
                 }`}
-              variants={buttonVariants}
+            // variants={buttonVariants}
             >
               {f}
-            </motion.button>
+            </button>
           ))}
-        </motion.div>
+        </div>
 
-        <motion.div // Apply motion to the grid container for layout animations
-          layout // Enable layout animations for the grid itself
+        <motion.div
+          layout
           className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
         >
-          <AnimatePresence> {/* Wrap filtered items with AnimatePresence */}
+          <AnimatePresence>
             {filtered.map((project) => (
-              <motion.div // Each project card is a motion.div
+              <motion.div
                 key={project.id}
-                layout // Enable layout animations for individual cards
+                layout
                 initial="hidden"
                 animate="visible"
                 exit="exit"
@@ -251,12 +250,6 @@ export default function ProjectsSection() {
             ))}
           </AnimatePresence>
         </motion.div>
-
-        {/* {filtered.length === 0 && (
-          <p className="text-center text-gray-500 mt-16 text-base">
-            No projects found for this filter.
-          </p>
-        )} */}
       </div>
     </section>
   );

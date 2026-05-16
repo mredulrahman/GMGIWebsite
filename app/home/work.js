@@ -63,8 +63,7 @@ const industries = [
 
 function IndustryCard({ item }) {
   return (
-    <a
-      href={item.href}
+    <div
       className="relative overflow-hidden group block aspect-4/3 bg-slate-300 cursor-pointer"
     >
       <Image
@@ -81,7 +80,7 @@ function IndustryCard({ item }) {
         <p className="text-white font-medium text-xl leading-tight">{item.title}</p>
         <p className="text-white/90 text-sm mt-1 font-medium transition-transform duration-300 transform group-hover:translate-x-5">Read more</p>
       </div>
-    </a>
+    </div>
   );
 }
 

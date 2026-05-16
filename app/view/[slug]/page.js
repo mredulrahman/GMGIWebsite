@@ -29,23 +29,13 @@ export async function generateMetadata({ params }) {
     return { title, description };
 }
 
-/* ─────────────────────────────────────────
-   Helpers
-───────────────────────────────────────── */
-
 const Dot = () => (
     <span className="inline-block w-2 h-2 rounded-full bg-[#2ec4b6] mr-3 mt-2 shrink-0" />
 );
 
-// Detects "Label: value" pattern
 const isKeyValue = (str) => /^[^|•\n]{1,60}:\s*.+/.test(str.trim());
 
-// Detects "|Label| value" pattern
 const isTabStyle = (str) => /^\|.+\|/.test(str.trim());
-
-/* ─────────────────────────────────────────
-   Block Components
-───────────────────────────────────────── */
 
 const TextBlock = ({ text }) => (
     <div className="space-y-4">
@@ -86,7 +76,6 @@ const ImageBlock = ({ images }) => {
     );
 };
 
-// Bullet list — plain steps with no special pattern
 const BulletSteps = ({ heading, steps }) => (
     <div className="">
         {heading && <h3 className="text-xl font-bold text-black mb-4">{heading}</h3>}
@@ -101,7 +90,6 @@ const BulletSteps = ({ heading, steps }) => (
     </div>
 );
 
-// Tab list — "|Label| description" rows
 const TabSteps = ({ heading, steps }) => (
     <div className="space-y-4">
         {heading && <h3 className="text-xl font-bold text-black pb-2">{heading}</h3>}
@@ -125,23 +113,13 @@ const TabSteps = ({ heading, steps }) => (
     </div>
 );
 
-// Key-Value card — "Label: Value" rows rendered as a definition list
-// Last step whose value is long prose gets rendered as a text paragraph below the card
 const KeyValueCard = ({ heading, steps }) => {
-    // Split steps into kv pairs vs trailing description paragraph
-    // A "description" step is one whose key is literally "Description"
     const kvSteps = steps.filter((s) => {
         const colonIdx = s.indexOf(":");
         if (colonIdx === -1) return false;
         const key = s.slice(0, colonIdx).trim().toLowerCase();
         return key;
     });
-
-    // const descStep = steps.find((s) => {
-    //     const colonIdx = s.indexOf(":");
-    //     if (colonIdx === -1) return false;
-    //     return s.slice(0, colonIdx).trim().toLowerCase() === "description";
-    // });
 
     return (
         <div className="space-y-6">
@@ -167,21 +145,10 @@ const KeyValueCard = ({ heading, steps }) => {
                     })}
                 </dl>
             </div>
-
-            {/* Description paragraph rendered separately below the card */}
-            {/* {descStep && (
-                <p className="text-black text-lg leading-relaxed">
-                    {descStep.slice(descStep.indexOf(":") + 1).trim()}
-                </p>
-            )} */}
         </div>
     );
 };
 
-/* ─────────────────────────────────────────
-   StepSection dispatcher
-   Decides which renderer to use based on step content
-───────────────────────────────────────── */
 const StepSection = ({ heading, steps }) => {
     if (!steps?.length) return null;
 
@@ -192,11 +159,6 @@ const StepSection = ({ heading, steps }) => {
     return <BulletSteps heading={heading} steps={steps} />;
 };
 
-/* ─────────────────────────────────────────
-   DYNAMIC RENDERER
-   Walks Object.entries in JSON key order.
-   Skips: id, slug, title (title is used in the page header).
-───────────────────────────────────────── */
 const DynamicPageRenderer = ({ page }) => {
     const SKIP = new Set(["id", "slug", "title"]);
     let seenStepSection = false;
@@ -206,7 +168,6 @@ const DynamicPageRenderer = ({ page }) => {
             {Object.entries(page).map(([key, value]) => {
                 if (SKIP.has(key)) return null;
 
-                // Plain string → TextBlock or CalloutBlock
                 if (typeof value === "string") {
                     const isCallout = seenStepSection && /^text\d+$/.test(key);
                     return isCallout
@@ -214,12 +175,9 @@ const DynamicPageRenderer = ({ page }) => {
                         : <TextBlock key={key} text={value} />;
                 }
 
-                // Images
                 if (key === "images" || (typeof value === "object" && !Array.isArray(value) && value?.src) || (Array.isArray(value) && value[0]?.src)) {
                     return <ImageBlock key={key} images={value} />;
                 }
-
-                // Any stepSection* key
                 if (key.startsWith("stepSection") && value?.steps) {
                     seenStepSection = true;
                     return <StepSection key={key} heading={value.heading} steps={value.steps} />;
@@ -231,10 +189,7 @@ const DynamicPageRenderer = ({ page }) => {
     );
 };
 
-/* ─────────────────────────────────────────
-   Page — title shown if present in JSON
-───────────────────────────────────────── */
-export default async function ProjectPage({ params }) {
+export default async function Page({ params }) {
     const { slug } = await params;
 
     if (EXCLUDED_SLUGS.includes(slug)) {
