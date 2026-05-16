@@ -91,7 +91,7 @@ function AccordionItem({ item, isOpen, onToggle }) {
         className="w-full flex items-center justify-between gap-3 border-b-2 border-teal-300 px-5 py-4 text-left transition-colors duration-150"
       >
         <div className="flex items-center gap-3">
-          <DoubleChevronIcon open={isOpen}/>
+          <DoubleChevronIcon open={isOpen} />
           <span className="text-white font-bold text-md">{item.title}</span>
         </div>
         {/* <span className="text-white/70 shrink-0">
@@ -100,9 +100,8 @@ function AccordionItem({ item, isOpen, onToggle }) {
       </button>
 
       <div
-        className={`overflow-hidden transition-all duration-500 ease-in-out ${
-          isOpen ? "max-h-150" : "max-h-0"
-        }`}
+        className={`overflow-hidden transition-all duration-500 ease-in-out ${isOpen ? "max-h-150" : "max-h-0"
+          }`}
       >
         <p className="px-5 pb-5 pt-1 text-black bg-[#CFECE7] text-md leading-relaxed">
           {item.content}
@@ -119,7 +118,7 @@ export default function WhatMakesUsDifferent() {
 
   return (
     <section id="whatmakesusdifferent">
-        <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">What Makes Us Different</h1>
+      <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">What Makes Us Different</h1>
       <div className="max-w-6xl mx-auto p-3">
         <div className="flex flex-col lg:flex-row items-center gap-10">
           <div className="lg:w-1/2 text-center lg:text-left">
@@ -137,21 +136,16 @@ export default function WhatMakesUsDifferent() {
           <div className="lg:w-1/2 w-full overflow-hidden">
             {accordionItems.map((item, index) => {
               const totalItems = accordionItems.length;
-              
-              // Calculate start and end ratios for each item's individual gradient segment
+
               const ratioStart = index / totalItems;
               const ratioEnd = (index + 1) / totalItems;
 
-              // Helper to interpolate RGB values
               const interpolate = (start, end, ratio) => Math.round(start + ratio * (end - start));
 
-              // Start Color (Navy)
               const c1 = `rgb(${interpolate(27, 20, ratioStart)}, ${interpolate(42, 159, ratioStart)}, ${interpolate(122, 189, ratioStart)})`;
-              
-              // End Color (Teal)
+
               const c2 = `rgb(${interpolate(27, 20, ratioEnd)}, ${interpolate(42, 159, ratioEnd)}, ${interpolate(122, 189, ratioEnd)})`;
 
-              // Create a linear gradient for the background property
               const bg = `linear-gradient(to bottom, ${c1}, ${c2})`;
 
               return (

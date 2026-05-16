@@ -161,13 +161,13 @@ export default function Page() {
             <div className="max-w-5xl mx-auto px-2 py-10 space-y-16">
 
                 <section className="space-y-8">
-                    <h1 className="text-5xl font-bold">Web Mapping Solutions</h1>
+                    <h1 className="text-4xl md:text-5xl font-bold">Web Mapping Solutions</h1>
 
                     <div className="grid grid-cols-2">
-                        <p className="text-center pb-3 text-xl">Our working Framework</p>
-                        <p className="text-center pb-3 text-xl">Services we provide</p>
+                        <p className="text-center pb-3 text-lg md:text-xl">Our working Framework</p>
+                        <p className="text-center pb-3 text-lg md:text-xl">Services we provide</p>
 
-                        <div className="pr-6 pt-4 space-y-4 text-xl">
+                        <div className="pr-6 pt-4 space-y-4 text-lg md:text-xl">
                             {frameworks.map((f, i) => (
                                 <div key={i} className="flex items-center gap-3">
                                     <span className="w-5 text-center text-base text-[#37368e]">{f.icon}</span>
@@ -191,19 +191,19 @@ export default function Page() {
                 </section>
 
                 <section className="space-y-6">
-                    <h2 className="text-5xl font-bold text-gray-900">Desktop GIS Mapping Solution</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold text-black">Desktop GIS Mapping Solution</h2>
 
-                    <p className="text-xl leading-relaxed">
+                    <p className="text-lg md:text-xl leading-relaxed">
                         For all of your Geographic Information Systems (GIS) needs, our team of experts is here to help.
                         From straightforward mapping projects to complex geodatabase design and application development,
                         we have the internal expertise to support you in sharing information in ways you didn't know were possible.
                     </p>
 
-                    <p className="text-xl text-center">Services we provide</p>
+                    <p className="text-lg md:text-xl text-center">Services we provide</p>
 
                     <div className="space-y-1.5">
                         {desktopServices.map((s, i) => (
-                            <p key={i} className="text-xl text-gray-700">–{s}</p>
+                            <p key={i} className="text-lg md:text-xl text-gray-700">–{s}</p>
                         ))}
                     </div>
 
@@ -215,9 +215,9 @@ export default function Page() {
                 </section>
 
                 <section className="space-y-6">
-                    <h2 className="text-5xl font-bold">RS Mapping Solutions</h2>
+                    <h2 className="text-4xl md:text-5xl font-bold">RS Mapping Solutions</h2>
 
-                    <p className="text-xl text-center">Services we provide</p>
+                    <p className="text-lg md:text-xl text-center">Services we provide</p>
 
                     <div className="space-y-1.5">
                         {rsServices.map((s, i) => (
@@ -232,7 +232,7 @@ export default function Page() {
                         <MapImage src={rsImages[2].src} alt="Digital Survey drone" />
                         <MapImage src={rsImages[3].src} alt="Digital Survey aerial" />
                     </div>
-                    <p className="text-xs text-gray-600 -mt-2">
+                    <p className="text-sm text-black -mt-2">
                         Digital Survey and 3D modeling for Jail Khal in Barisal City Corporation
                     </p>
                 </section>

@@ -3,7 +3,6 @@ import data from "@/app/data/posts.json";
 
 const { postsData } = data;
 
-// ─── Static params & metadata ─────────────────────────────────────────────────
 
 export async function generateStaticParams() {
   return postsData.map((post) => ({ slug: String(post.id) }));
@@ -16,7 +15,6 @@ export async function generateMetadata({ params }) {
   return { title: post.title };
 }
 
-// ─── Sidebar (static) ─────────────────────────────────────────────────────────
 
 function Sidebar() {
   return (
@@ -81,7 +79,7 @@ function SidebarSection({ title, children }) {
   );
 }
 
-// ─── Comment form (static) ────────────────────────────────────────────────────
+
 
 function CommentForm() {
   return (
@@ -89,9 +87,9 @@ function CommentForm() {
       <h3 className="text-lg font-semibold text-gray-800 mb-6 font-[Raleway]">leave a reply</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
         {[
-          { id: "name",    placeholder: "Name *"   },
-          { id: "email",   placeholder: "E-mail *" },
-          { id: "website", placeholder: "Website"  },
+          { id: "name", placeholder: "Name *" },
+          { id: "email", placeholder: "E-mail *" },
+          { id: "website", placeholder: "Website" },
         ].map(({ id, placeholder }) => (
           <input
             key={id}
@@ -113,7 +111,7 @@ function CommentForm() {
   );
 }
 
-// ─── PostMeta (changes per post) ──────────────────────────────────────────────
+
 
 function PostMeta({ date, author, category }) {
   return (
@@ -140,7 +138,7 @@ function PostMeta({ date, author, category }) {
   );
 }
 
-// ─── Content block renderers ──────────────────────────────────────────────────
+
 
 function ImageBlock({ block }) {
   return (
@@ -195,22 +193,20 @@ function TextBlock({ block }) {
   );
 }
 
-// ─── PostContent — renders content[] in declared order, no type assumptions ───
 
 function PostContent({ content }) {
   return (
     <>
       {content.map((block, i) => {
-        if (block.type === "image")      return <ImageBlock      key={i} block={block} />;
+        if (block.type === "image") return <ImageBlock key={i} block={block} />;
         if (block.type === "thumbnails") return <ThumbnailsBlock key={i} block={block} />;
-        if (block.type === "text")       return <TextBlock       key={i} block={block} />;
+        if (block.type === "text") return <TextBlock key={i} block={block} />;
         return null;
       })}
     </>
   );
 }
 
-// ─── Page ─────────────────────────────────────────────────────────────────────
 
 export default async function Page({ params }) {
   const { slug } = await params;

@@ -231,7 +231,7 @@ export default function ProjectsSection() {
 
         <motion.div
           layout
-          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5"
+          className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5 p-3"
         >
           <AnimatePresence>
             {filtered.map((project) => (

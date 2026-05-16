@@ -5,22 +5,22 @@ const { projectsData } = data;
 
 const fieldMap = {
   grant: [
-    { key: "potentialFunder",            label: "Potential Funder" },
-    { key: "potentialFundingCategory",   label: "Potential Funding Category" },
-    { key: "currentStatus",              label: "Current Status" },
-    { key: "proposalSubmissionDate",     label: "Proposal Submission Date" },
+    { key: "potentialFunder", label: "Potential Funder" },
+    { key: "potentialFundingCategory", label: "Potential Funding Category" },
+    { key: "currentStatus", label: "Current Status" },
+    { key: "proposalSubmissionDate", label: "Proposal Submission Date" },
     { key: "secondReviewSubmissionDate", label: "Second Review Submission Date" },
   ],
   client: [
-    { key: "client",                 label: "Client" },
+    { key: "client", label: "Client" },
     { key: "proposalSubmissionDate", label: "Proposal Submission Date" },
   ],
   awarded: [
-    { key: "awardedPackageName",     label: "Awarded Package Name" },
-    { key: "awardedPackageNo",       label: "Awarded Package No" },
-    { key: "client",                 label: "Client" },
-    { key: "score",                  label: "Score" },
-    { key: "awardedDate",            label: "Awarded Date" },
+    { key: "awardedPackageName", label: "Awarded Package Name" },
+    { key: "awardedPackageNo", label: "Awarded Package No" },
+    { key: "client", label: "Client" },
+    { key: "score", label: "Score" },
+    { key: "awardedDate", label: "Awarded Date" },
     { key: "letterOfIntentSignedOn", label: "Letter of Intent Signed on" },
   ],
 };
@@ -42,11 +42,11 @@ export async function generateMetadata({ params }) {
 
 function MetaRow({ label, value }) {
   return (
-    <div className="flex flex-wrap gap-x-2 mb-3">
-      <span className="font-bold text-gray-900 text-xl leading-relaxed">
+    <div className="flex flex-wrap gap-x-0.5 mb-2">
+      <span className="font-bold text-black md:text-lg text-md leading-none">
         {label}:
       </span>
-      <span className="text-gray-700 text-xl leading-relaxed">{value}</span>
+      <span className="text-black md:text-lg text-md leading-none">{value}</span>
     </div>
   );
 }
@@ -68,11 +68,11 @@ export default async function ProjectPage({ params }) {
         }}
       >
         <div className="p-8 pb-40">
-          <h1 className="text-3xl font-semibold text-center text-gray-900 leading-snug mb-10">
+          <h1 className="text-2xl md:text-3xl font-semibold text-left text-gray-900 leading-snug mb-8">
             {project.title}
           </h1>
 
-          <div className="mb-8 space-y-1">
+          <div className="mb-8 space-y-0.5">
             {fields.map(({ key, label }) =>
               project[key] ? (
                 <MetaRow key={key} label={label} value={project[key]} />
@@ -81,10 +81,10 @@ export default async function ProjectPage({ params }) {
           </div>
 
           <div>
-            <p className="font-bold text-gray-900 text-xl mb-2">
+            <p className="font-bold text-gray-900 text-lg md:text-xl mb-2">
               Description:
             </p>
-            <p className="text-gray-700 text-xl leading-relaxed">
+            <p className="text-gray-700 text-lg md:text-xl leading-none text-left">
               {project.description}
             </p>
           </div>

@@ -1,4 +1,3 @@
-// app/solutions/mobile-app/page.jsx
 "use client";
 
 import Image from "next/image";
@@ -6,9 +5,7 @@ import { useState } from "react";
 import { HiChevronDoubleDown } from "react-icons/hi";
 import { RiArrowUpSFill } from "react-icons/ri";
 import { motion, AnimatePresence } from "framer-motion";
-/* ─────────────────────────────────────────
-   DATA
-───────────────────────────────────────── */
+
 const appServices = [
     {
         title: "Custom Mobile Apps",
@@ -47,9 +44,6 @@ const appServices = [
     },
 ];
 
-/* ─────────────────────────────────────────
-   ACCORDION ITEM
-───────────────────────────────────────── */
 const AccordionItem = ({ title, detail }) => {
     const [open, setOpen] = useState(false);
 
@@ -88,9 +82,6 @@ const AccordionItem = ({ title, detail }) => {
     );
 };
 
-/* ─────────────────────────────────────────
-   IMAGE PLACEHOLDER
-───────────────────────────────────────── */
 // const ProjectImage = ({ src, alt, className = "" }) => {
 //     if (src) {
 //         return (
@@ -107,18 +98,11 @@ const AccordionItem = ({ title, detail }) => {
 //     }
 // };
 
-/* ─────────────────────────────────────────
-   PAGE
-───────────────────────────────────────── */
+
 export default function Page() {
     return (
         <main className="bg-white min-h-screen">
             <div className="max-w-5xl mx-auto px-6 py-10 space-y-10">
-                {/* ══════════════════════════════════
-            HERO IMAGE — "Our APP Services"
-            Place your image at:
-            /public/images/app-services-hero.jpg
-        ══════════════════════════════════ */}
                 <div className="w-full overflow-hidden rounded-sm shadow-sm border border-gray-100">
                     <Image
                         src="/images/Beige-Minimalist-Timeline-Diagram-Graph.png"
@@ -129,9 +113,6 @@ export default function Page() {
                         priority
                     />
                 </div>
-                {/* ══════════════════════════════════
-            ACCORDION — Mobile App Dev Services
-        ══════════════════════════════════ */}
                 <section className="space-y-0">
                     <h2 className="text-4xl font-bold text-black mb-6">
                         Mobile App Development Services
@@ -142,27 +123,15 @@ export default function Page() {
                         ))}
                     </div>
                 </section>
-                {/* ══════════════════════════════════
-            PROJECT IMAGES
-            Row: two images side-by-side
-            Left:  SMS platform dashboard (wide)
-            Right: SMS app sidebar / menu (tall)
-
-            Place your images at:
-            /public/images/sms-platform-dashboard.jpg
-            /public/images/sms-app-sidebar.jpg
-        ══════════════════════════════════ */}
                 <section className="space-y-3">
                     <p className="text-md text-black">SMS based data collection platform</p>
                     <div className="flex justify-center items-center gap-10">
-                        {/* Left – wide dashboard screenshot */}
                         <Image
                             src="/images/image_2023_04_04T04_35_25_984Z-1024x495.png"
                             alt="SMS based data collection platform – dashboard view"
                             width={1024}
                             height={495}
                         />
-                        {/* Right – app sidebar / menu screenshot */}
                         <Image
                             src="/images/image_2023_04_04T04_34_41_727Z.png"
                             alt="SMS based data collection platform – app menu"

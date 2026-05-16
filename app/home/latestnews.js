@@ -83,14 +83,14 @@ function NewsCard({ item }) {
 export default function LatestnewsSection() {
   return (
     <section id="latest-news" className="">
-        <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Latest News</h1>
+      <h1 className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white font-semibold text-xl md:text-2xl px-6 md:px-18 text-center py-1">Latest News</h1>
       <div className="max-w-6xl mx-auto">
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-3">
-            {newsItems.map((item) => (
-              <Link key={item.id} href={`/posts/${item.id}`}>
-                <NewsCard item={item} />
-              </Link>
-            ))}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 py-3 px-2">
+          {newsItems.map((item) => (
+            <Link key={item.id} href={`/posts/${item.id}`}>
+              <NewsCard item={item} />
+            </Link>
+          ))}
         </div>
       </div>
     </section>

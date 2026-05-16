@@ -24,11 +24,11 @@ function MemberCard({ member }) {
         </div>
         <div className="flex-1 h-[4.5px] bg-gray-800" />
       </div>
- 
+
       <div className="bg-white shadow-md px-6 pt-35 pb-5 flex flex-col items-center text-center h-full min-h-50">
         <p className="font-normal text-gray-900 text-lg">{member.name}</p>
         <p className="text-gray-500 text-md mt-1 leading-snug">{member.role}</p>
- 
+
         {(member.linkedin || member.email) && (
           <div className="flex items-center gap-3 mt-4">
             {member.linkedin && (
@@ -58,18 +58,8 @@ function MemberCard({ member }) {
 
 export default function TeamPage() {
   return (
-    <main 
-      // className="min-h-screen bg-cover bg-center bg-no-repeat"
-      // style={{ backgroundImage: "url('/dashboard/abstract-geometric-white-background-free-vector.jpg')" }}
-    >
+    <main>
       <div className="relative z-10">
-        {/* <header className="bg-linear-to-b from-[#1b2a7a] to-[#149fbd] py-12 text-center text-white">
-          <h1 className="text-4xl md:text-5xl font-bold">Our Expert Team</h1>
-          <p className="mt-4 text-lg opacity-90 max-w-2xl mx-auto px-4">
-            Meet the professionals behind GMGI Solutions Ltd. dedicated to delivering high-quality geospatial and technical excellence.
-          </p>
-        </header> */}
-
         <section className="max-w-7xl mx-auto px-4 py-20">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-24">
             {allTeamMembers.map((member) => (
@@ -77,15 +67,6 @@ export default function TeamPage() {
             ))}
           </div>
         </section>
-
-        {/* <footer className="pb-20 text-center">
-            <a 
-                href="/home" 
-                className="inline-block bg-linear-to-b from-[#1b2a7a] to-[#149fbd] text-white px-8 py-2 rounded shadow-md hover:opacity-90 transition-opacity"
-            >
-                Back to Home
-            </a>
-        </footer> */}
       </div>
     </main>
   );

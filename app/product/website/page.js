@@ -86,15 +86,7 @@ const techColumns = [
     },
 ];
 
-/* ─────────────────────────────────────────
-   PROJECT IMAGES
-   6 image slots arranged as per screenshot:
-   Row 1: left (GIS dashboard)  | right (Tradeix website)
-   Row 2: left (empty/gray)     | right (Malaria dashboard)
-   Row 3: left (Henna Gallery)  | right (empty/gray)
-   Row 4: left (GMGI website)   | right (2 text captions)
-   Row 5: left (Poshmode site)  | right (empty)
-───────────────────────────────────────── */
+
 const projectRows = [
     {
         left: { src: "/images/Untitled-design-1-1024x1024.png", alt: "GIS Dashboard project" },
@@ -204,19 +196,16 @@ export default function Page() {
                             <TechBlock {...techColumns[1]} />
                         </div>
 
-                        {/* Row 2: CMS | Mobile */}
                         <div className="grid grid-cols-2 gap-x-8">
                             <TechBlock {...techColumns[2]} />
                             <TechBlock {...techColumns[3]} />
                         </div>
 
-                        {/* Row 3: Database | Version Control */}
                         <div className="grid grid-cols-2 gap-x-8">
                             <TechBlock {...techColumns[4]} />
                             <TechBlock {...techColumns[5]} />
                         </div>
 
-                        {/* Row 4: Design Tools | DevOps */}
                         <div className="grid grid-cols-2 gap-x-8">
                             <TechBlock {...techColumns[6]} />
                             <TechBlock {...techColumns[7]} />
@@ -224,7 +213,6 @@ export default function Page() {
                     </div>
                 </div>
 
-                {/* ── Projects section ─────────────────── */}
                 <div className="space-y-5">
                     <h2 className="text-xl font-bold text-black">Projects</h2>
 
