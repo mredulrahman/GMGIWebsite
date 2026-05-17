@@ -2,7 +2,6 @@
 
 import { Geist, Geist_Mono } from "next/font/google";
 import "@/styles/globals.css";
-import "@/styles/home.module.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import '@fortawesome/fontawesome-svg-core/styles.css';

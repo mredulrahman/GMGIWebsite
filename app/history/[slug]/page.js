@@ -15,11 +15,6 @@ export async function generateMetadata({ params }) {
   return { title: service.title };
 }
 
-
-
-
-
-
 export default async function ServicePage({ params }) {
   const { slug } = await params;
   const service = servicesData.find((s) => String(s.id) === slug) ?? null;

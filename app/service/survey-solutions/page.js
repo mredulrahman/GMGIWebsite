@@ -133,6 +133,7 @@ const ImageCarousel = () => {
                                     width={200}
                                     height={100}
                                     className="w-full h-full object-cover"
+                                    style={{ width: "100%", height: "100%" }}
                                 />
                             ) : (
                                 <div className="w-full h-full bg-gray-200" />
@@ -152,8 +153,8 @@ export default function Page() {
                 <HeroSection />
                 <ImageCarousel />
                 <div className="space-y-5">
-                    {images.map((i) => (
-                        <Image src={i.src} alt={i.alt} width={200} height={100} className="w-full h-full object-cover" />
+                    {images.map((i, index) => (
+                        <Image key={index} src={i.src} alt={i.alt} width={200} height={100} className="w-full h-full object-cover" style={{ width: "100%", height: "100%" }} />
                     ))}
                 </div>
             </div>
