@@ -2,6 +2,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const navItems = [
   { label: "Home", url: "/" },
@@ -62,7 +63,7 @@ const navItems = [
         ]
       },
       { label: "Survey Equipment", url: "/#survey-equipment" },
-      { label: "GeoLive", url: "/#hero" }
+      { label: "GeoLive", url: "/#geolive" }
     ]
   },
   { label: "Contact Us", url: "/contactUs" }
@@ -88,6 +89,22 @@ const subMenuAnimate = {
 const DesktopNavItem = ({ item, isRoot = true }) => {
   const [isHovered, setIsHovered] = useState(false);
   const hasItems = item.items && item.items.length > 0;
+  const pathname = usePathname();
+
+  const handleClick = (e) => {
+    if (item.url && item.url.startsWith('/#')) {
+      const hash = item.url.split('#')[1];
+      if (pathname === '/') {
+        const element = document.getElementById(hash);
+        if (element) {
+          e.preventDefault();
+          element.scrollIntoView({ behavior: 'smooth' });
+          window.history.pushState(null, '', item.url);
+        }
+      }
+    }
+    setIsHovered(false);
+  };
 
   return (
     <div
@@ -97,6 +114,7 @@ const DesktopNavItem = ({ item, isRoot = true }) => {
     >
       <Link
         href={item.url || "#"}
+        onClick={handleClick}
         className={`flex items-center justify-between gap-1 text-md no-underline hover:text-gray-200 transition-colors font-normal text-white`}>
         <span className={isRoot ? "whitespace-nowrap" : "whitespace-normal"}>{item.label}</span>
         {hasItems && (
@@ -143,11 +161,29 @@ const DesktopNavItem = ({ item, isRoot = true }) => {
   );
 };
 
-const MobileNavItem = ({ item, depth = 0 }) => {
+const MobileNavItem = ({ item, depth = 0, closeMenu }) => {
   const [open, setOpen] = useState(false);
   const hasItems = item.items && item.items.length > 0;
+  const pathname = usePathname();
 
   const paddingLeft = depth === 0 ? 'pl-5' : depth === 1 ? 'pl-9' : 'pl-14';
+
+  const handleClick = (e) => {
+    e.stopPropagation();
+    if (closeMenu) closeMenu();
+
+    if (item.url && item.url.startsWith('/#')) {
+      const hash = item.url.split('#')[1];
+      if (pathname === '/') {
+        const element = document.getElementById(hash);
+        if (element) {
+          e.preventDefault();
+          element.scrollIntoView({ behavior: 'smooth' });
+          window.history.pushState(null, '', item.url);
+        }
+      }
+    }
+  };
 
   return (
     <div className="border-b border-white last:border-b-0">
@@ -158,7 +194,7 @@ const MobileNavItem = ({ item, depth = 0 }) => {
         {hasItems ? (
           <span>{item.label}</span>
         ) : (
-          <Link href={item.url || "#"} className="flex-1 no-underline text-white" onClick={e => e.stopPropagation()}>
+          <Link href={item.url || "#"} className="flex-1 no-underline text-white" onClick={handleClick}>
             {item.label}
           </Link>
         )}
@@ -188,7 +224,7 @@ const MobileNavItem = ({ item, depth = 0 }) => {
             >
               <div className="">
                 {item.items.map((subItem, index) => (
-                  <MobileNavItem key={index} item={subItem} depth={depth + 1} />
+                  <MobileNavItem key={index} item={subItem} depth={depth + 1} closeMenu={closeMenu} />
                 ))}
               </div>
             </div>
@@ -254,7 +290,7 @@ const Navbar = () => {
         >
           <div className="flex flex-col">
             {navItems.map((item, index) => (
-              <MobileNavItem key={index} item={item} depth={0} />
+              <MobileNavItem key={index} item={item} depth={0} closeMenu={() => setMobileOpen(false)} />
             ))}
           </div>
         </div>

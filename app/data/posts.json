@@ -7,19 +7,28 @@
       "category": "Uncategorized",
       "title": "GMGI Just Hosted a One Day Session Titled Foundation Training on GIS 2nd Base on November 19th, 2022",
       "content": [
+        {
+          "type": "image",
+          "src": "/post/1668844898517-1110x550.jpeg",
+          "alt": "Foundation Training on GIS 2nd Base"
+        },
+        {
+          "type": "thumbnails",
+          "items": [
             {
-              "type": "image",
-              "src": "/post/1668844898517-1110x550.jpeg",
-              "alt": "Foundation Training on GIS 2nd Base"
+              "src": "/post/1668844898517.jpeg",
+              "alt": "Session photo 1"
             },
             {
-                "type": "thumbnails",
-                "items": [
-                    { "src": "/post/1668844898517.jpeg",    "alt": "Session photo 1" },
-                    { "src": "/post/1668844893595.jpeg",    "alt": "Session photo 2" },
-                    { "src": "/post/1668844895704.jpeg",    "alt": "Session photo 3" }
-                ]
+              "src": "/post/1668844893595.jpeg",
+              "alt": "Session photo 2"
+            },
+            {
+              "src": "/post/1668844895704.jpeg",
+              "alt": "Session photo 3"
             }
+          ]
+        }
       ]
     },
     {
@@ -41,9 +50,18 @@
         {
           "type": "thumbnails",
           "items": [
-            { "src": "/post/1668510371797-2048x1536.jpeg",  "alt": "Session photo 1" },
-            { "src": "/post/1668510370659-1024x768.jpeg",   "alt": "Session photo 2" },
-            { "src": "/post/1668510370139-2048x1536.jpeg",  "alt": "Session photo 3" }
+            {
+              "src": "/post/1668510371797-2048x1536.jpeg",
+              "alt": "Session photo 1"
+            },
+            {
+              "src": "/post/1668510370659-1024x768.jpeg",
+              "alt": "Session photo 2"
+            },
+            {
+              "src": "/post/1668510370139-2048x1536.jpeg",
+              "alt": "Session photo 3"
+            }
           ]
         }
       ]
@@ -72,14 +90,23 @@
         {
           "type": "thumbnails",
           "items": [
-            { "src": "/post/313400333_10160049835006465_3083665075692226485_n-1024x768.jpg", "alt": "Training photo 1" },
-            { "src": "/post/313426150_10160043911201465_7439233173964355227_n.jpg",           "alt": "Training photo 2" },
-            { "src": "/post/313416617_10160043262246465_121528154265006269_n-1024x768.jpg",  "alt": "Training photo 3" }
+            {
+              "src": "/post/313400333_10160049835006465_3083665075692226485_n-1024x768.jpg",
+              "alt": "Training photo 1"
+            },
+            {
+              "src": "/post/313426150_10160043911201465_7439233173964355227_n.jpg",
+              "alt": "Training photo 2"
+            },
+            {
+              "src": "/post/313416617_10160043262246465_121528154265006269_n-1024x768.jpg",
+              "alt": "Training photo 3"
+            }
           ]
         },
         {
           "type": "image",
-          "src": "/images/313415721_10160043262041465_4278601572741041142_n.jpg",
+          "src": "/post/313415721_10160043262041465_4278601572741041142_n.jpg",
           "alt": "Group photo"
         }
       ]

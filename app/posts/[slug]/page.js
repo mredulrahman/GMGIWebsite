@@ -84,7 +84,7 @@ function SidebarSection({ title, children }) {
 function CommentForm() {
   return (
     <div className="mt-10">
-      <h3 className="text-lg font-semibold text-gray-800 mb-6 font-[Raleway]">leave a reply</h3>
+      <h3 className="text-lg font-semibold text-black mb-6 font-[Raleway]">leave a reply</h3>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-4">
         {[
           { id: "name", placeholder: "Name *" },
@@ -115,7 +115,7 @@ function CommentForm() {
 
 function PostMeta({ date, author, category }) {
   return (
-    <div className="flex flex-wrap items-center gap-4 text-xs text-gray-500 mb-5 font-[Lato]">
+    <div className="flex flex-wrap items-center gap-4 text-lg text-black mb-5 font-[Lato]">
       <span className="flex items-center gap-1">
         <svg className="w-3.5 h-3.5 text-teal-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2}
